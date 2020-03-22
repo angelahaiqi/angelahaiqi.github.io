@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <title>Site</title>
+        <style>
+            body {
+                background-color: white;
+            }
+            .header {
+                color: black;
+                font-family: "HelveticaNeue";
+                text-align: center;
+            }
+            .topnav {
+                overflow: hidden;
+            }
+            .topnav a {
+                float: right;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+                font-family: "HelveticaNeue";
+                padding: 14px 16px;
+            }
+            .topnav a:hover {
+                color: #8790ff;
+                transition: 1s;
+            }
+            .row {
+                display: flex;
+            }
+            .column {
+                flex: 33%;
+                padding: 2px;
+            }
+            .column img:hover {
+                opacity: 0.5;
+            }
+            .fa-envelope {
+                color: black;
+                text-decoration: none;
+            } 
+            .fa-envelope:hover {
+                color: #8790ff;
+                transition: 1s;
+            }
+            .fa-linkedin-in {
+                color: black;
+                text-decoration: none;
+            } 
+            .fa-linkedin-in:hover {
+                color: #8790ff;
+                transition: 1s;
+            }
+            .fa-behance {
+                color: black;
+                text-decoration: none;
+            } 
+            .fa-behance:hover {
+                color: #8790ff;
+                transition: 1s;
+            }
+            .fa-github {
+                color: black;
+                text-decoration: none;
+            } 
+            .fa-github:hover {
+                color: #8790ff;
+                transition: 1s;
+            }
+            @media screen and (max-width: 599px) {
+                .header {
+                    padding-top: 40px;
+                    padding-bottom: 60px;
+                    font-size: 30px;
+                }
+                .fa-envelope {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-right: 25px;
+                    font-size: 20px;
+                }
+                .fa-linkedin-in {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 20px;
+                } 
+                .fa-behance {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 20px;
+                } 
+                .fa-github {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 20px;
+                } 
+            }   
+            @media screen and (min-width: 600px) and (max-width: 999px) {
+                .header {
+                    padding-top: 50px;
+                    padding-bottom: 70px;
+                    font-size: 40px;
+                }
+                .fa-envelope {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-right: 25px;
+                    font-size: 25px;
+                }
+                .fa-linkedin-in {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 25px;
+                } 
+                .fa-behance {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 25px;
+                } 
+                .fa-github {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 25px;
+                } 
+            } 
+            @media screen and (min-width: 1000px) and (max-width: 1024px) {
+                .header {
+                    padding-top: 50px;
+                    padding-bottom: 80px;
+                    font-size: 50px;
+                }
+                .fa-envelope {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-right: 25px;
+                    font-size: 30px;
+                }
+                .fa-linkedin-in {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+                .fa-behance {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+                .fa-github {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+            } 
+            @media screen and (min-width: 1025px) {
+                .header {
+                    padding-top: 50px;
+                    padding-bottom: 80px;
+                    font-size: 50px;
+                }
+                .fa-envelope {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    padding-right: 25px;
+                    font-size: 30px;
+                }
+                .fa-linkedin-in {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+                .fa-behance {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+                .fa-github {
+                    padding: 50px 25px 50px 25px;
+                    font-size: 30px;
+                } 
+            }           
+        </style>
+    </head>
+    <body>
+        <script>
+            var TxtRotate = function(el, toRotate, period) {
+                this.toRotate = toRotate;
+                this.el = el;
+                this.loopNum = 0;
+                this.period = parseInt(period, 10) || 2000;
+                this.txt = '';
+                this.tick();
+                this.isDeleting = false;
+              };
+              
+              TxtRotate.prototype.tick = function() {
+                var i = this.loopNum % this.toRotate.length;
+                var fullTxt = this.toRotate[i];
+              
+                if (this.isDeleting) {
+                  this.txt = fullTxt.substring(0, this.txt.length - 1);
+                } else {
+                  this.txt = fullTxt.substring(0, this.txt.length + 1);
+                }
+              
+                this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+              
+                var that = this;
+                var delta = 300 - Math.random() * 100;
+              
+                if (this.isDeleting) { delta /= 2; }
+              
+                if (!this.isDeleting && this.txt === fullTxt) {
+                  delta = this.period;
+                  this.isDeleting = true;
+                } else if (this.isDeleting && this.txt === '') {
+                  this.isDeleting = false;
+                  this.loopNum++;
+                  delta = 500;
+                }
+              
+                setTimeout(function() {
+                  that.tick();
+                }, delta);
+              };
+              
+              window.onload = function() {
+                var elements = document.getElementsByClassName('txt-rotate');
+                for (var i=0; i<elements.length; i++) {
+                  var toRotate = elements[i].getAttribute('data-rotate');
+                  var period = elements[i].getAttribute('data-period');
+                  if (toRotate) {
+                    new TxtRotate(elements[i], JSON.parse(toRotate), period);
+                  }
+                }
+                var css = document.createElement("style");
+                css.type = "text/css";
+                css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+                document.body.appendChild(css);
+              };
+        </script>
+        <div class = "topnav">
+            <a href="about.html">about</a>
+            <a href="works.html">works</a>
+        </div>
+        <div class = "header">
+            <h1>Hi! I'm Angela.</h1>
+            <h4>I'm a(n) <span style= 'color: #8790ff' class= "txt-rotate" data-period="2000" data-rotate='[ "designer.", "artist.", "student.", "traveler.", "animal lover." ]'></span></h4>
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <a href = "https://www.behance.net/gallery/84037727/Coach-Mobile-App"><img src="rotary.png" style="width:95% ; padding-left:30px"></a>
+            </div> 
+            <div class = "column">
+                <a href = "https://www.behance.net/gallery/79809881/Vibo"><img src="myhousing.png" style="width:95%; padding-right:30px"></a>
+            </div> 
+        </div>
+        <div class = "row">
+            <div class = "column">
+                <a href = "https://www.behance.net/gallery/72768243/Jennifer-Sue"><img src="sap.png" style="width:95%; padding-left:30px"></a>
+            </div> 
+            <div class = "column">
+                <a href = "https://www.behance.net/gallery/79809881/Vibo"><img src="coach.png" style="width:95%; padding-right:30px"></a>
+            </div>
+        </div>    
+        <div class = "row">
+            <div class = "column">
+                <a href = "https://www.behance.net/gallery/72768243/Jennifer-Sue"><img src="js.png" style="width:47.5%; padding-left:30px"></a>
+            </div> 
+        </div>
+        <div align = "center">
+            <a href = "mailto: angela.haiqi@gmail.com" class = "fas fa-envelope"></a>
+            <a href = "https://www.linkedin.com/in/angela-liu-8a281716a/" class = "fab fa-linkedin-in"></a>
+            <a href = "https://www.behance.net/angelahaiqi" class = "fab fa-behance"></a>
+            <a href = "https://github.com/angelahaiqi" class = "fab fa-github"></a>
+        </div>
+   </body>
+</html>
