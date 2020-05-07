@@ -1,0 +1,152 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Site</title>
+        <style>
+            @media screen and (max-width: 599px) {
+                .header {
+                    text-align: center;
+                    font-size: 15px;
+                }
+                .bold {
+                    text-align: center;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    font-size: 15px;
+                }
+                .thumb {
+                    width: 75%;
+                    margin: 10px 10px;
+                }
+            }   
+            @media screen and (min-width: 600px) and (max-width: 999px) {
+                .header {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .bold {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                .thumb {
+                    width: 50%;
+                    margin: 10px 10px;
+                }
+            } 
+            @media screen and (min-width: 1000px) and (max-width: 1024px) {
+                .header {
+                    padding-left: 50px;
+                    font-size: 20px;
+                }
+                .bold {
+                    padding-left: 50px;
+                    padding-bottom: 20px;
+                    font-size: 20px;
+                }
+                .thumb {
+                    width: 33%;
+                    margin: 10px 10px;
+                }
+            } 
+            @media screen and (min-width: 1025px) {
+                .header {
+                    padding-left: 75px;
+                    font-size: 25px;
+                }
+                .bold {
+                    padding-left: 80px;
+                    padding-bottom: 20px;
+                    font-size: 20px;
+                }
+                .thumb {
+                    width: 33%;
+                    margin: 10px 10px;
+                }
+            } 
+        </style>
+    </head>
+    <body>
+        <a href="../works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../works.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
+        <div class = "header">
+            <h1>Other Works</span></h1>
+        </div>
+        <div class = "header">
+            <h2>Art</h2>
+        </div>
+        <div class = "bold">
+            <p>Various works done from 2017-present, using ink pen and tablet</p>
+        </div>
+        <div class = "container">
+            <img class = "thumb" src = "b&w girls.png" alt = "b&w girls">
+            <img class = "thumb" src = "GirlsGirlsGirls.png" alt = "GirlsGirlsGirls">
+            <img class = "thumb" src = "b&w boys.png" alt = "b&w boys">
+            <img class = "thumb" src = "BoysBoysBoys.png" alt = "BoysBoysBoys">
+            <img class = "thumb" src = "the handmaiden.png" alt = "The Handmaiden">
+            <img class = "thumb" src = "strip.png" alt = "strip">
+            <img class = "thumb" src = "solange.png" alt = "Solange">
+            <img class = "thumb" src = "self portrait.jpg" alt = "self portrait">
+            <img class = "thumb" src = "hands.png" alt = "Hands">
+            <img class = "thumb" src = "liu wen.png" alt = "Liu Wen">
+            <img class = "thumb" src = "glossier.png" alt = "Glossier">
+            <img class = "thumb" src = "van gogh.png" alt = "Van Gogh">
+        </div>
+        <div class = "header">
+            <h2>Design</h2>
+        </div>
+        <div class = "bold">
+            <p>TAMID at Brandeis Merchandise</p>
+        </div>
+        <div class = "container">
+            <img class = "thumb" src = "tamid shirt front.png" alt = "tamid shirt front">
+            <img class = "thumb" src = "tamid shirt back.png" alt = "tamid shirt back">
+            <img class = "thumb" src = "tamid sweatshirt.jpg" alt = "tamid sweatshirt">
+        </div>
+        <br>
+        <div class = "bold">
+            <p>APAHM Opening Program</p>
+        </div>
+        <div class = "container">
+            <img class = "thumb" src = "program_cover.png" alt = "program cover">
+            <img class = "thumb" src = "program_cover_back.png" alt = "program cover + back">
+            <img class = "thumb" src = "program_12.png" alt = "page 1-2">
+            <img class = "thumb" src = "program_34.png" alt = "page 3-4">
+            <img class = "thumb" src = "program_56.png" alt = "page 5-6">
+            <img class = "thumb" src = "program_78.png" alt = "page 7-8">
+            <img class = "thumb" src = "program_910.png" alt = "page 9-10">
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>

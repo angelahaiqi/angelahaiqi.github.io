@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Site</title>
+    </head>
+    <body>
+        <a href="../works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../works.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <div class = "header">
+            <h1>SAPTours</span></h1>
+        </div>
+        <img class = "banner" src = "sap_banner.png" alt = "banner">
+        <div class = "title">
+            <h2>Overview</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">This past summer, a friend asked me to design a web application with him for our school's 
+                admissions office that would allow college tour guides to effectively schedule tours. It is now currently in use.</p>
+        </div>  
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Role:</span> UX/UI Designer</p>
+            <p align = "justify"><span class = "bold">Date:</span> May - December, 2019</p>
+            <p align = "justify"><span class = "bold">Tools:</span> Adobe XD, Adobe Illustrator</p>
+        </div> 
+        <div class = "title">
+            <h2>Background</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">My friend is a student tour guide for our school. At the beginning of each semester, 
+                the coordinator team releases the potential slots of tours. Guides are also given a calendar created by the 
+                coordinators at the beginning of the month. Tour guides enter their availability on a sheet, and then 
+                coordinators are responsible for randomizing which tour guides give a tour every single month. This process 
+                ended up being inefficient, messy, and confusing. My friend therefore pitched the idea of creating an app that 
+                would allow them to efficiently schedule tours, and asked me to be the UX/UI designer.</p>
+        </div>
+        <div class = "title">
+            <h2>The Challenge</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Design a web app that would make scheduling tours easy and efficient. And can be coded by my partner.</span></p>
+            <p align = "justify">My friend first showed me their old scheduling process. The tour guides shared a 
+                giant Excel sheet that contained everyone's information and schedules, and any upcoming tours. Through the 
+                Excel sheet, guides picked up any tours that were available. With so much unorganized information in one 
+                place, it was tedious to navigate and extremely difficult to keep track of what other guides were doing. 
+                As a result, he received approval from the Admissions Office to design an app that would streamline the 
+                tour-scheduling process.</p>
+        </div>
+        <div class = "title">
+            <h2>The Process</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Before we could think about how we wanted the app to work, we first had to think about 
+            <span class = "bold">what kind</span> of app we wanted. We had three options: web app, mobile app, and automation process. 
+            We analyzed the pros and cons of each platform.</p>
+        </div>
+        <img class = "img" src = "platform_analysis.png" alt = "platform analysis">
+        <div class = "text">
+            <p align = "justify">Ultimately, we chose to create a web app as we felt it would offer the most utility. 
+                My friend would code it using React. From there, we brainstormed necessary features and consulted 
+                with the lead tour guide and guide supervisor. We defined two types of users and their functionalities:</p>
+        </div>
+        <img class = "img" src = "users.png" alt = "users">
+        <div class = "text">
+            <p align = "justify">From there, we came up with other features:</p>
+            <p align = "justify"><span class = "bold">1.</span> Admins can add tour times, along with how many tours are available. <br><br>
+                <span class = "bold">2.</span> Tour guides would add in their availability for the tour times created. 
+                They could edit this availability at any time. They could also set a minimum number of tours.<br><br>
+                <span class = "bold">3.</span> Admins could see a list of active/inactive tour guides at any time. Only admins could 
+                inactivate a tour guide.<br><br>
+                <span class = "bold">4.</span> E-mails would be sent out 24 hours before tours to remind students.<br><br>
+                <span class = "bold">5.</span> If a tour guide drops a tour, an e-mail would be sent out to all tour guides 
+                with that time marked as available. They could them claim the tour, and it would be assigned to them.<br><br>
+                <span class = "bold">6.</span> List of tour guides with searchable majors/potentially clubs, to help see if a 
+                guide is a good match for a specific tour group (ex. a guide who is an international student could be a better 
+                fit for a group of prospective international students).</p>
+            <p align = "justify">Since it's a scheduling app, we decided a calendar-based app was the way to go. 
+                I researched other calendar apps, such as Google Calendar, for inspiration. I also looked into 
+                numerous social media apps, such as Facebook and Instagram, for the tour guide profiles.</p>
+        </div>
+        <div class = "title">
+            <h2>The Result</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">We decided to call our app <span class = "bold">SAPTours (Student Ambassador Program Tours)</span>. 
+                My friend finished coding it and released it in December 2019. It is now currently being used by our school's 
+                admissions office. The logo, a college building, was created by me using Illustrator. The app's colors, blue and 
+                white, are our school's colors.</p>
+            <p align = "justify">Due to technical limitations and differing opinions, the app does not completely match my vision, 
+                but it has txhe general idea. Below is my vision, which is from the point of view of a guide since the admin features were created in the 
+                backend. <a href = "https://drive.google.com/drive/folders/1-3ub-X_0zev6GJs1OonX1RLFcJ6IeQvm?usp=sharing">Here are screenshots of the real app.</a></p>
+            </div>
+        </div>
+        <img class = "img" src = "SAP Login.png" alt = "login"><br>
+        <img class = "img" src = "SAP Login – 2.png" alt = "login"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Login page.</span> I liked Facebook's straightforward approach to 
+                logging in and creating an account, displaying both on the same page. New/current users know immediately 
+                where to go. To ensure only Brandeis students can access it, the app checks for a Brandeis email. When 
+                signing up, users must indicate their roles.</p>
+        </div>
+        <img class = "img" src = "Home Page.png" alt = "home"><br>
+        <img class = "img" src = "Menu.png" alt = "menu"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The home page.</span> It's set up to look like a calendar, making it 
+                intuitive to use. Any event for that month will be shown on its date. There is also a legend at the top for 
+                reference, and users have the option to only view their own tours. Users have the option 
+                download the calendar to their Google Calendar so they have a copy of it. There is a menu on the top right-hand corner.</p>
+        </div>
+        <img class = "img" src = "Tour Info.png" alt = "tour info"><br>
+        <img class = "img" src = "Tour Confirmation.png" alt = "tour confirmation"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Covering a tour.</span> Users can click on each event and find information 
+            about it. They can then choose to cover the tour.</p>
+        </div>
+        <img class = "img" src = "Guide List.png" alt = "guides"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The guide list.</span> All users can see the full list of guides, 
+                along with the guide's information. Users can search for specific types of guides. They can also email 
+                them directly. These features can be helpful for matching a guide with a tour group or event.</p>
+        </div>
+        <img class = "img" src = "Profile 1.png" alt = "profile"><br>
+        <img class = "img" src = "Profile 2.png" alt = "profile"><br>
+        <img class = "img" src = "Profile 3.png" alt = "stats"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Profile page.</span> Users fill out all their information here. 
+                The information is organized into different categories, and users can see clearly which category they're at. 
+                They can change their profile photo and view their tour stats as well.</p>
+        </div>
+        <div class = "title">
+            <h2>Reflection</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">This project was a great opportunity for me because it's an app that was actually 
+                going to be put into use. It was also my first time working with a developer, so I learned that 
+                I sometimes needed to compromise to accommodate to their abilities. Since this app is 
+                currently being used, my friend and I can see that users are able to learn it easily and efficiently 
+                schedule tours. Moving forward, we may need to update the app to support any future needs. There were 
+                also some features we were unable to implement but would like to one day, such as the analytics feature 
+                shown in my wireframe.</p>
+        </div>
+        <div id = "footer"></div>
+    </body>
+</html>

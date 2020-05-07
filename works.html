@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="contact.css" hreflang="en">
+        <script> 
+            $(function(){
+              $("#footer").load("contact.html"); 
+            });
+        </script>
         <title>Site</title>
         <style>
             body {
@@ -11,90 +19,64 @@
             }
             .header {
                 color: black;
-                font-family: "HelveticaNeue";
+                font-family: "Lato";
                 text-align: center;
             }
-            .topnav {
-                overflow: hidden;
+            .highlight {
+                background: linear-gradient(180deg, transparent 50%, #cdd1fd 50%);
             }
-            .topnav a {
-                float: right;
-                text-align: center;
-                text-decoration: none;
-                color: black;
-                font-family: "HelveticaNeue";
-                padding: 14px 16px;
-            }
-            .topnav a:hover {
-                color: #8790ff;
-                transition: 1s;
-            }
-            .row {
+            .container {
                 display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
             }
-            .column {
-                flex: 33%;
-                padding: 2px;
+            .thumb {
+                position: relative;
             }
-            .column img:hover {
-                opacity: 0.5;
+            .thumb img {
+                display: block;
+                width: 100%;
             }
-            .fa-envelope {
-                color: black;
-                text-decoration: none;
-            } 
-            .fa-envelope:hover {
-                color: #8790ff;
-                transition: 1s;
+            .thumb:hover .overlay {
+                opacity: 1;
             }
-            .fa-linkedin-in {
-                color: black;
-                text-decoration: none;
-            } 
-            .fa-linkedin-in:hover {
-                color: #8790ff;
-                transition: 1s;
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                height: 100%;
+                width: 100%;
+                transition: .5s ease;
+                color: #000;
+                background: #fff;
             }
-            .fa-behance {
-                color: black;
-                text-decoration: none;
-            } 
-            .fa-behance:hover {
-                color: #8790ff;
-                transition: 1s;
-            }
-            .fa-github {
-                color: black;
-                text-decoration: none;
-            } 
-            .fa-github:hover {
-                color: #8790ff;
-                transition: 1s;
+            .overlay .text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                font-family: "Lato-Bold";
             }
             @media screen and (max-width: 599px) {
                 .header {
                     padding-top: 40px;
                     padding-bottom: 60px;
+                    font-size: 25px;
+                }
+                .thumb {
+                    width: 100%;
+                    margin: 5px 5px;
+                }
+                .overlay .text{
                     font-size: 30px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 20px;
-                }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
             }   
             @media screen and (min-width: 600px) and (max-width: 999px) {
                 .header {
@@ -102,24 +84,13 @@
                     padding-bottom: 70px;
                     font-size: 40px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 25px;
+                .thumb {
+                    width: 100%;
+                    margin: 10px 10px;
                 }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
+                .overlay .text{
+                    font-size: 30px;
+                }
             } 
             @media screen and (min-width: 1000px) and (max-width: 1024px) {
                 .header {
@@ -127,53 +98,53 @@
                     padding-bottom: 80px;
                     font-size: 50px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
+                .thumb {
+                    width: 45%;
+                    margin: 10px 10px;
+                }
+                .overlay .text{
                     font-size: 30px;
                 }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
             } 
             @media screen and (min-width: 1025px) {
                 .header {
-                    padding-top: 50px;
+                    padding-top: 40px;
                     padding-bottom: 80px;
                     font-size: 50px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
+                .thumb {
+                    width: 45%;
+                    margin: 10px 10px;
+                }
+                .overlay .text{
                     font-size: 30px;
                 }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
             }           
         </style>
     </head>
     <body>
+        <a href="works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="works.html">works</a></li>
+                <li class = "item"><a href="about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
         <script>
             var TxtRotate = function(el, toRotate, period) {
                 this.toRotate = toRotate;
@@ -231,40 +202,42 @@
                 document.body.appendChild(css);
               };
         </script>
-        <div class = "topnav">
-            <a href="about.html">about</a>
-            <a href="works.html">works</a>
-        </div>
         <div class = "header">
-            <h1>Hi! I'm Angela.</h1>
+            <h1>Hi! I'm <span class = 'highlight'>Angela</span>.</h1>
             <h4>I'm a(n) <span style= 'color: #8790ff' class= "txt-rotate" data-period="2000" data-rotate='[ "designer.", "artist.", "student.", "traveler.", "animal lover." ]'></span></h4>
         </div>
-        <div class = "row">
-            <div class = "column">
-                <a href = "https://www.behance.net/gallery/84037727/Coach-Mobile-App"><img src="rotary.png" style="width:95% ; padding-left:30px"></a>
-            </div> 
-            <div class = "column">
-                <a href = "https://www.behance.net/gallery/79809881/Vibo"><img src="myhousing.png" style="width:95%; padding-right:30px"></a>
-            </div> 
+        <div class = "container">
+           <a href = "Rotary/rotary.html" class = "thumb"><img src="Rotary/rotary.png">
+                <div class="overlay" style = "background-color: #faa818;">
+                    <div class="text">Rotary Waltham Website Redesign</div>
+                </div>
+            </a>
+            <a href = "Housing/myhousing.html" class = "thumb"><img src="Housing/myhousing.png">
+                <div class="overlay" style = "background-color: #1c6aff;">
+                    <div class="text">MyHousing Redesign</div>
+                </div>
+            </a>
+            <a href = "SAPTours/saptours.html" class = "thumb"><img src="SAPTours/sap.png">
+                <div class="overlay" style = "background-color: #002e6c;">
+                    <div class="text">SAPTours</div>
+                </div>
+            </a>
+            <a href = "Coach/coach.html" class = "thumb"><img src="Coach/coach.png">
+                <div class="overlay" style = "background-color: #ff9995;">
+                    <div class="text">Coach Mobile App</div>
+                </div>
+            </a>
+             <a href = "JS/js.html" class = "thumb"><img src="JS/js.png">
+                <div class="overlay" style = "background-color: #f5cfdc;">
+                    <div class="text">Jennifer Sue Website Redesign</div>
+                </div>
+            </a>
+            <a href = "Art_Design/art_design.html" class = "thumb"><img src="Art_Design/art_design.png">
+                <div class="overlay" style = "background-color: black;">
+                    <div class="text">Other Works</div>
+                </div>
+            </a>
         </div>
-        <div class = "row">
-            <div class = "column">
-                <a href = "https://www.behance.net/gallery/72768243/Jennifer-Sue"><img src="sap.png" style="width:95%; padding-left:30px"></a>
-            </div> 
-            <div class = "column">
-                <a href = "https://www.behance.net/gallery/79809881/Vibo"><img src="coach.png" style="width:95%; padding-right:30px"></a>
-            </div>
-        </div>    
-        <div class = "row">
-            <div class = "column">
-                <a href = "https://www.behance.net/gallery/72768243/Jennifer-Sue"><img src="js.png" style="width:47.5%; padding-left:30px"></a>
-            </div> 
-        </div>
-        <div align = "center">
-            <a href = "mailto: angela.haiqi@gmail.com" class = "fas fa-envelope"></a>
-            <a href = "https://www.linkedin.com/in/angela-liu-8a281716a/" class = "fab fa-linkedin-in"></a>
-            <a href = "https://www.behance.net/angelahaiqi" class = "fab fa-behance"></a>
-            <a href = "https://github.com/angelahaiqi" class = "fab fa-github"></a>
-        </div>
-   </body>
+        <div id="footer"></div>
+    </body>
 </html>

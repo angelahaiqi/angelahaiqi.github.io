@@ -4,6 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
         <title>Site</title>
         <style>
             body {
@@ -11,225 +19,135 @@
             }
             .header {
                 color: black;
-                font-family: "HelveticaNeue";
+                font-family: "Lato";
                 text-align: left;
-            }
-            .topnav {
-                overflow: hidden;
-            }
-            .topnav a {
-                float: right;
-                text-align: center;
-                text-decoration: none;
-                color: black;
-                padding: 14px 16px;
-                font-family: "HelveticaNeue";
-            }
-            .topnav a:hover {
-                color: #8790ff;
-                transition: 1s;
             }
             .bio {
                 color: black;
-                font-family: "HelveticaNeue";
+                font-family: "Lato";
                 text-align: left;
             }
             .img {
-                width: 40.3%; 
-                height: auto; 
-                float: right; 
-            }
-            .fa-envelope {
-                color: black;
-                text-decoration: none;
-                display: inline-block;
-                text-align: center;
-            } 
-            .fa-envelope:hover {
-                color: #8790ff;
-                transition: 1s;
-            }
-            .fa-linkedin-in {
-                color: black;
-                text-decoration: none;
-                display: inline-block;
-                text-align: center;
-            } 
-            .fa-linkedin-in:hover {
-                color: #8790ff;
-                transition: 1s;
-            }
-            .fa-behance {
-                color: black;
-                text-decoration: none;
-                display: inline-block;
-                text-align: center;
-            } 
-            .fa-behance:hover {
-                color: #8790ff;
-                transition: 1s;
-            }
-            .fa-github {
-                color: black;
-                text-decoration: none;
-                display: inline-block;
-                text-align: center;
-            } 
-            .fa-github:hover {
-                color: #8790ff;
-                transition: 1s;
+                height: auto;
             }
             @media screen and (max-width: 599px) {
                 .header {
-                    padding-left: 20px;
+                    text-align: center;
                     font-size: 20px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 20px;
-                }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 20px;
-                } 
                 .bio {
-                    padding-left: 15px;
+                    padding-top: 15px;
+                    padding-left: 20px;
+                    padding-right: 20px;
                     font-size: 14px; 
+                }
+                .img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 90%;
                 }
             }   
             @media screen and (min-width: 600px) and (max-width: 999px) {
                 .header {
-                    padding-left: 20px;
+                    text-align: center;
                     font-size: 25px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 25px;
-                }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 25px;
-                } 
                 .bio {
-                    padding-left: 20px;
+                    padding-top: 20px;
+                    padding-left: 95px;
+                    padding-right: 95px;
                     font-size: 16px; 
+                }
+                .img {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 75%;
                 }
             } 
             @media screen and (min-width: 1000px) and (max-width: 1024px) {
                 .header {
-                    padding-left: 25px;
+                    padding-left: 50px;
                     font-size: 30px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 30px;
-                }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
                 .bio {
-                    padding-left: 25px;
+                    padding-left: 50px;
                     font-size: 18px; 
+                   
+                }
+                .img {
+                    width: 42%;
+                    padding-right: 50px; 
+                    padding-left: 50px;
+                    float: right; 
                 }
             } 
             @media screen and (min-width: 1025px) {
                 .header {
-                    padding-left: 25px;
+                    padding-left: 75px;
                     font-size: 30px;
                 }
-                .fa-envelope {
-                    padding-top: 50px;
-                    padding-bottom: 50px;
-                    padding-right: 25px;
-                    font-size: 30px;
-                }
-                .fa-linkedin-in {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-behance {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
-                .fa-github {
-                    padding: 50px 25px 50px 25px;
-                    font-size: 30px;
-                } 
                 .bio {
-                    padding-left: 25px;
+                    padding-left: 75px;
                     font-size: 18px; 
                 }
                 .img {
-                    padding-right: 50px; 
+                    width: 31%;
+                    padding-right: 75px; 
                     padding-left: 50px;
+                    float: right; 
                 }
             }           
         </style>
     </head>
     <body>
-        <div class = "topnav">
-            <a href="about.html">about</a>
-            <a href="works.html">works</a>
-        </div>
+        <a href="works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="works.html">works</a></li>
+                <li class = "item"><a href="about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
         <div class = "header">
             <h1>Hello, I'm <span style= 'color: #8790ff'>Angela!</span></h1>
         </div>
+        <img class = "img" src = "Assets/me.jpg" alt = "beautiful girl"> 
         <div class = "bio">
-            <p align= "justify"><div class = "img"><img src = "me.jpg" alt = "beautiful girl"></div> 
-            I'm a senior at Brandeis University, triple-majoring in Computer Science, Economics, and East Asian Studies (I know. I don't sleep). Growing up near New York City, 
-            I was constantly inspired by museums, street art, architecture, and every quirk it had to offer. I was inspired to try new things and see things from different perspectives.
-            That's why I've always loved creating. Art and design allow me to express myself and have shaped the way I view the world.
-            They are everywhere, from the cars we drive to the buildings we work and live in. 
+            <p align= "justify">
+                I'm a senior at Brandeis University, triple-majoring in Computer Science, Economics, and East Asian Studies (I know. I don't sleep). Growing up near New York City, 
+                I was constantly inspired by museums, street art, architecture, and every quirk it had to offer. I was inspired to try new things and see things from different perspectives.
+                That's why I've always loved creating. Art and design allow me to express myself and have shaped the way I view the world.
+                They are everywhere, from the cars we drive to the buildings we work and live in. 
             </p>
             <p align= "justify">I am a part of a generation where we saw technology evolve so rapidly. I've been able to understand the importance in thinking 
-            about how people interact with it. My drive to create meaningful experiences for digital products propels me to pursue a career in UX/UI design, the 
-            intersection of my passions: creative pursuits and technology.</p>
+                about how people interact with it. My drive to create meaningful experiences for digital products propels me to pursue a career in UX/UI design, the 
+                intersection of my passions: creative pursuits and technology.</p>
             <p align= "justify">I'm looking for opportunities after I graduate in May! I am self-taught in Adobe, prototyping tools, and HTML/CSS. With experience 
-            in desiging for various organizations, I have the drive and skills to tackle complex problems and deliver compelling solutions. 
-            I'm always eager to learn more and love collaborating with others!</p>
+                in desiging for various organizations, I have the drive and skills to tackle complex problems and deliver compelling solutions. 
+                I'm always eager to learn more and love collaborating with others!</p>
             <p><span style= 'color: #8790ff'>Some favorites of mine</span><br><br>
-            1. Movies: The Grand Budapest Hotel, Her, Ghibli films, Disney films<br>
-            2. Books: Khaled Hosseini novels, Harry Potter<br>
-            3. TV shows: Avatar (Last Airbender + Legend of Korra), The Office, Parks & Recreation<br>
-            4. Music: classic/alternate rock, hip-hop, instrumental<br>
-            5. Past-times: running, drawing, visiting museums, chilling with my dog</p>
+                1. Movies: The Grand Budapest Hotel, Her, Ghibli films, Disney films<br>
+                2. Books: Khaled Hosseini novels, Harry Potter<br>
+                3. TV shows: Avatar (Last Airbender + Legend of Korra), The Office, Parks & Recreation, Bojack Horseman<br>
+                4. Music: classic/alternate rock, hip-hop, instrumental<br>
+                5. Past-times: running, drawing, visiting museums, chilling with my dog</p>
         </div>
-        <div align = "center">
-            <a href = "mailto: angela.haiqi@gmail.com" class = "fas fa-envelope"></a>
-            <a href = "https://www.linkedin.com/in/angela-liu-8a281716a/" class = "fab fa-linkedin-in"></a>
-            <a href = "https://www.behance.net/angelahaiqi" class = "fab fa-behance"></a>
-            <a href = "https://github.com/angelahaiqi" class = "fab fa-github"></a>
-        </div>
+        <div id="footer"></div>
     </body>
 </html>

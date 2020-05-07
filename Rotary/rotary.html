@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+              $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Site</title>
+    </head>
+    <body>
+        <a href="../works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../works.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
+        <div class = "header">
+            <h1>Rotary Waltham Website Redesign</span></h1>
+        </div>
+        <img class = "banner" src = "rotary_banner.png" alt = "banner">
+        <div class = "title">
+            <h2>Overview</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">My two teammates and I were finalists in DeisHacks, a 24-hour design/business competition targeted at real world solutions. 
+                    For my project, I redesigned the Rotary Club of Waltham website.</p>
+        </div>  
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Role:</span> UX/UI Designer</p>
+            <p align = "justify"><span class = "bold">Date:</span> February 8th - February 9th, 2020</p>
+            <p align = "justify"><span class = "bold">Tool:</span> Adobe Photoshop</p>
+        </div> 
+        <div class = "title">
+            <h2>Background</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Around 30 non-profit organizations in the Waltham area came to my school with different challenges. 
+                I was placed into the Rotary Club of Waltham with two students, Tim and Emily, who interned there. Rotary International is an 
+                organization focused on community service, and they had a branch in Waltham that had trouble recruiting new volunteers. 
+                One problem we found was that their website was extremely outdated and not user-friendly.</p>
+        </div>
+        <div class = "title">
+            <h2>The Challenge</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Redesign the Waltham Rotary Club website so that it is more modern, visually pleasing, and user-friendly.</span></p>
+            <p align = "justify">My teammates, Tim and Emily, were interns at Rotary who cited the lack of effective digital outreach as the main issue. 
+                They showed me their website for reference.</p>
+        </div>
+        <img class = "img" src = "ew.jpg" alt = "original">
+        <figure>
+            <img class = "img" src = "ew2.jpg" alt = "original">
+            <figcaption>A part of their home page.</figcaption>
+        </figure>
+        <figure>
+            <img class = "img" src = "ew3.jpg" alt = "original">
+            <figcaption>"Stories" page which features their events.</figcaption>
+        </figure>
+        <div class = "text">
+            <p align = "justify">We quickly identified these problems:</p>
+            <p align = "justify"><span class = "bold">1.</span> There isn't really a section that states what exactly Rotary is. 
+                Users cannot get an idea of the work they do and therefore, will not feel inspired to get involved. <br><br>
+                <span class = "bold">2.</span> If a user DOES want to get involved, there is no obvious place to sign up. Contact information is also scattered and 
+                at times, somewhat hidden. <br><br>
+                <span class = "bold">3.</span> The overall design is very old and not aesthetically pleasing. <br><br>
+                <span class = "bold">4.</span> The photo on the home page just shows older people, giving off the impression that Rotary is not for the younger generation. <br><br>
+                <span class = "bold">5.</span> The Stories page is straight-up unreadable.</p>
+            <p align = "justify">The list goes on, but due to limited time (and me being the only team member with design experience), 
+                we decided to focus on redesigning the home page and events page. For a branding guideline and general inspiration, 
+                we visited the Rotary International website. What we decided to take from that was the usage of blue and gold 
+                (Rotary's colors), and include a big "JOIN" and "DONATE" button in the top corner, that way if someone wants to 
+                get involved or donate, they can do so easily.</p>
+        </div>
+        <figure>
+            <img class = "img" src = "hacking away.png" alt = "me and tim">
+            <figcaption>Pic of me and Tim working, taken by Emily :)</figcaption>
+        </figure>
+        <div class = "title">
+            <h2>Sketches</h2>
+        </div>
+        <img class = "img" src = "sketches.jpg" alt = "sketches">
+        <div class = "text">
+            <p align = "justify">On the left is the home page. We set up the top similarly to the Rotary International website 
+                (logo at the top left, JOIN and DONATE at the top right). We set the menu up to have all the information a 
+                user would need: ABOUT Waltham Rotary, how to GET INVOLVED, any NEWS & EVENTS (changed from "Stories," which 
+                we felt was less clear), and information specifically FOR MEMBERS. We decided to keep the text from the current
+                website and push it to the top, since we felt that was a nice introduction. Then, we thought to promote upcoming events 
+                below, and then at the bottom of every page, have contact information.</p>
+            <p align = "justify">On the right upcoming events. "News & Events" is a drop-down menu that has news, 
+                past events, and upcoming events. Clicking on "Upcoming Events" will lead to this page that lists 
+                all future events. The user can click on each one to learn more and sign up. This is an intuitive way to see what 
+                Waltham Rotary is up to and how to participate.</p>
+        </div>
+        <div class = "title">
+            <h2>High Fidelity Wireframes</h2>
+        </div>
+        <img class = "img" src = "home.jpg" alt = "home">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The new home page.</span> Waltham Rotary currently does not have their own photos, so Tim sent 
+                photos from Rotary International. We chose images that showed a mix of younger and older people, and people of 
+                different races, to send the message that anyone can join Rotary. For the text at the top, I changed the 
+                "Please join us" to a "Join Us" button. I originally wanted to link to a sign-up sheet, but Tim and Emily said 
+                they don't have people register to meet beforehand. Thus, we decided it should link to Google Maps, showing directions from 
+                your location to the location of the restaurant.<br><br>
+                Scrolling down, the user can see some upcoming events. The user can click on each event and it'll lead them to that event page.<br><br>
+                If the user scrolls down further, they'll find the Contact Us section shows all of Waltham Rotary's contact information. Currently, Waltham Rotary only has a 
+                Facebook page, but we think if they also created a Twitter, Instagram etc., they can reach a greater number of 
+                people in different engaging ways.</p>
+        </div>
+        <img class = "img" src = "events.png" alt = "events"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Upcoming events.</span> The events are clearly listed, 
+                with the event name, date, and brief description. If a user was interested in a particular event, 
+                they can click "Learn more," and be directed to a page that describes the event in more detail and 
+                gives them the option to register.</p>
+        </div>
+        <div class = "title">
+            <h2>Feedback & Reflection</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Responses from the judges were positive. They found our redesign to be much more
+                intuitive and visually pleasing. Though my team did not end up winning, one of the judges came up 
+                to us afterwards to tell us again how much they liked our work.
+            </p>
+            <p align = "justify">This was my first design hackathon, so I naturally learned a lot. Due to very limited time, 
+                I had to prioritize what to work on and not get too caught up on every single detail. Given more time, I would 
+                have liked to redesign/create more pages and test the new design.
+            </p>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>

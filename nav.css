@@ -1,0 +1,139 @@
+nav {
+    overflow: auto;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: "Lato";
+    padding: 14px 16px;
+}
+nav a:hover {
+    color: #8790ff;
+    transition: 1s;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li {
+    white-space: nowrap;
+}
+.logo {
+    position: absolute;
+    transition: all 1s;
+    background-image: url('Assets/logo.svg');
+    background-repeat: no-repeat;
+    background-position: 18px 50%;
+}
+.logo:hover {
+    background-image: url('Assets/logo_hover.svg');
+    background-repeat: no-repeat;
+}
+.burger a {
+    font-size: 20px;
+}
+@media screen and (max-width: 599px) {
+    .logo {
+        background-size: 75%;
+        padding: 30px;
+    }
+    ul {
+        padding-top: 10px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .burger {
+        order: 1;
+    }
+    .item {
+        width: 100%;
+        order: 2;
+        padding: 20px;
+        text-align: center;
+        display: none;
+    }
+    .item.active {
+        display: block;
+    }
+}   
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .logo {
+        background-size: 75%;
+        padding: 35px;
+    }
+    ul {
+        padding-top: 15px;
+    }
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .burger {
+        order: 1;
+    }
+    .item {
+        width: 100%;
+        order: 2;
+        padding: 20px;
+        text-align: center;
+        display: none;
+    }
+    .item.active {
+        display: block;
+    }
+} 
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+    .logo {
+        background-size: 75%;
+        padding: 35px;
+    }
+    ul {
+        padding-top: 5px;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    .burger {
+        display: none;
+    }
+    .item {
+        order: 1;
+    }
+    .button {
+        order: 2;
+    }
+    .menu li {
+        padding: 15px 10px;
+    }
+} 
+@media screen and (min-width: 1025px) {
+    .logo {
+        background-size: 75%;
+        padding: 35px;
+    }
+    ul {
+        padding-top: 5px;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    .burger {
+        display: none;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 5px 10px;
+    }
+}  

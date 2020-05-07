@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Site</title>
+    </head>
+    <body>
+        <a href="../works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../works.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
+        <div class = "header">
+            <h1>MyHousing Redesign</span></h1>
+        </div>
+        <img class = "banner" src = "myhousing_banner.png" alt = "banner"></div>
+        <div class = "title">
+            <h2>Overview</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">For my final HCI project, I worked in a team of 4 to redesign MyHousing, an online 
+                platform students at my school use to select housing/dining.</p>
+        </div>  
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Role:</span> UX Designer, UX Researcher</p>
+            <p align = "justify"><span class = "bold">Date:</span> October 24th - December 5th, 2019</p>
+            <p align = "justify"><span class = "bold">Tools:</span> Adobe XD</p>
+        </div> 
+        <div class = "title">
+            <h2>Background</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Every year, students must apply to live on-campus using the online platform MyHousing. 
+                Though they're able to apply for housing and dining in the end, there are still complaints about it being 
+                confusing to use. Thus, my group and I chose to redesign it for our final HCI project.</p>
+        </div>
+        <div class = "title">
+            <h2>The Challenge</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Redesign MyHousing so that it is more intuitive, efficient, and has 
+                higher utility.</span></p>
+            <p align = "justify">This is what the MyHousing home page currently looks like: </p>
+        </div>
+        <img class = "img" src = "housing1.jpg" alt = "original">
+        <img class = "img" src = "housing2.jpg" alt = "original">
+        <div class = "text">
+            <p align = "justify">My entire team and I are students who have used MyHousing at least once. 
+                Therefore, we could draw from personal experience to figure out how to improve MyHousing. 
+                We all agreed that the menu was poorly designed: it is hard to read and there are too many options 
+                for such little tasks. For example, "More Tasks" only contains the room condition report. We also all 
+                felt that having access to floor plans in MyHousing would be helpful (currently, the floor plans are 
+                placed on a page of the school's official website). Most importantly, we felt the actual housing/dining 
+                selection process was not the most straightforward. You have to click quite a few links, while receiving 
+                no confirmation that you're headed in the right direction.</p>
+        </div>
+        <div class = "title">
+            <h2>Research</h2>
+        </div>
+        <div class = "text">
+            <p>Though we were confident in our beliefs, we still felt it was important to see exactly what other students 
+                were thinking as well. As a result, we created a questionnaire that we sent to students we knew and posted 
+                in social media groups. We received about thirty responses. We also conducted four interviews.</p>
+            <p>The questionnaire and interviews yielded interesting results:<br><br>
+                <span class = "bold">1.</span> From the questionnaire, 26%, the biggest percentile, ranked navigating MyHousing 
+                to be a 6 on a scale of 1-10, with 1 being hardest and 10 being easiest. This contrasted from the interviewees 
+                that claimed navigating MyHousing was more difficult (a 4 on average)<br><br>
+                <span class = "bold">2.</span> No one could seem to remember how the housing/dining selection works. All they 
+                know is that every year, they have to play around with the platform for a little bit and figure out how to 
+                select housing/dining. <br><br>
+                <span class = "bold">3.</span> All of the participants agreed that the direct access to floor plans from 
+                MyHousing would be useful. <br><br>
+                <span class = "bold">4.</span> All of the participants agreed MyHousing does not do much to help find roommates. 
+                They all have to rely on being able to request friends as roommates.<br><br>
+                <span class = "bold">5.</span> In terms of removing features, they found the messaging platform unhelpful. 
+                No one knew how to use it.</p>
+            <p>Overall, we concluded that MyHousing is not that ineffective, but it does not meet its potential in helping students achieve their housing/meal plan goals.</p>
+        </div>
+        <div class = "title">
+            <h2>Paper Prototype</h2>
+        </div>
+        <div class = "container">
+            <img class = "thumb" src = "paper1.png" alt = "paper">
+            <img class = "thumb" src = "paper2.png" alt = "paper">
+            <img class = "thumb" src = "paper3.png" alt = "paper">
+            <img class = "thumb" src = "paper4.png" alt = "paper">
+            <img class = "thumb" src = "paper5.png" alt = "paper">
+            <img class = "thumb" src = "paper6.png" alt = "paper">
+            <img class = "thumb" src = "paper7.png" alt = "paper">
+        </div>
+        <div class = "text">
+            <p align = "justify">Based off our responses, we thought of a design that was more straightforward and had higher
+                utility by adding floor plans and a roommate matching system. We created a paper prototype to test our ideas. We had 
+                ten subjects, all of whom were also students. Our tests utilized this scenario:</p>
+        </div>
+        <div class = "text">
+            <p align = "justify">"Sam Stanley is a sophomore at Brandeis University getting ready to select 
+                housing for next year. Sam wants to live in the Hassenfeld building of East Quad due to its close 
+                proximity to his classes. He would prefer his room to be on the first or second floor so he 
+                does not have to climb many stairs. Sam did not have a positive experience with his suitemates this year, so 
+                he is also searching for a new roommate. His other friends already have housing plans, so he is hoping 
+                that MyHousing could match him with someone compatible."</p>
+        </div>
+        <div class = "text">
+            <p align = "justify">Our subjects were able to navigate our prototype quickly and easily. They all agreed 
+                that our redesign was more efficient and useful. We did, however, receive a couple of suggestions. A major one 
+                was to indicate which dorms still had available rooms, as some are way more popular than others, to save the user time.
+                One subject also felt that our prototype was not always clear on which text was a link and which wasn't. Additionally, they 
+                thought at first that the rooms shown on the East: Hassenfeld page were the only ones available. We had intended 
+                for the page to be scrolled down to view all options. After collecting the feedback, we updated our design and 
+                created our wireframes.</p>
+        </div>
+        <div class = "title">
+            <h2>High Fidelity Wireframes</h2>
+        </div>
+        <img class = "img" src = "home.png" alt = "home">
+        <img class = "img" src = "Menu.png" alt = "menu">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The new home page.</span> Changing the menu text from gray to white 
+                makes it much easier to read. The menu is also much more simple, featuring the 
+                only options that really matter (with Housing having a drop-down of important tasks). We removed the "Home" 
+                button and made the Brandeis logo act as that. We also designed it that during the housing selection period, 
+                a banner indicating the user's selection time/number appears at the top as a reminder.</p>
+        </div>
+        <img class = "img" src = "profile.png" alt = "profile">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The profile page.</span> In the current design, the list of 
+                roommates/suitemates on the home page link to their mail. In our new design, since users have 
+                legitimate profiles, the names are linked to their profile. Here is Sam's profile. Profile photos 
+                default to student ID photos, but users have to option of replacing it with a nicer photo. They can 
+                also write a short bio and answer a lot of lifestyle questions. The answers to the questions is 
+                crucial for roommate matching. If a user is viewing someone else's profile, the email will be linked.</p>
+        </div>
+        <img class = "img" src = "Roommate Search.png" alt = "roommate search"><br>
+        <img class = "img" src = "Roomate Request.png" alt = "roommate request"><br>
+        <img class = "img" src = "Roomate Request 2.png" alt = "roommate request"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Selecting a roommate.</span> Based off answers to the questions on Sam's profile, 
+                the platform will show the students in his year who he matches best with (it will go down to 80%). His current 
+                roommates will always be pushed to the top, in case he wants to live with them again. He also has the option of 
+                searching for anyone in the school. He can view people's profiles, send emails, and send roommate requests 
+                (the other student will be notified through email if they receive a request and can accept through there). 
+                Once they have accepted his request, Sam can pull them into any dorm he chooses.</p>
+        </div>
+        <img class = "img" src = "Floor Plans.png" alt = "floor plans"><br>
+        <img class = "img" src = "Hass Floor Plans.png" alt = "hass floor plans"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Viewing floor plans.</span> If Sam wants to view the floor plans of 
+                Hassenfeld, all he has to do is click "View Floor Plans" and click "Hassenfeld." From there, he can see the 
+                plans of each floor. He can click on them and interact with them, zooming in and dragging it to get a better look.</p>
+        </div>
+        <img class = "img" src = "Housing Selection.png" alt = "housing selection"><br>
+        <img class = "img" src = "Housing Selection 2.png" alt = "housing selection"><br>
+        <img class = "img" src = "Housing Selection 3.png" alt = "housing selection"><br>
+        <img class = "img" src = "Housing Selection 4.png" alt = "housing selection"><br>
+        <img class = "img" src = "Housing Selection 5.png" alt = "housing selection"><br>
+        <img class = "img" src = "Housing Selection 6.png" alt = "housing selection"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Selecting housing.</span> If it is now Sam's time to register, all 
+                he has to do is click "Select Housing" from the drop-down. All the dorms at Brandeis are listed. We 
+                took the suggestion of indicating the number of available housing. This saves the user time from clicking in to see 
+                which rooms are available in each building. We also rearranged how each room was listed, making all the 
+                options clearer. In each dorm, Sam can see the floor plan of a standard room as an added reference, though he will need to see the 
+                actual floor plans for specific rooms. Once he has decided on a room, he can click on it and confirm his 
+                selection. He also has the option to change his selection by clicking on another room and confirming for that. 
+                Once he confirms, an email will be sent to him and his roommate(s) so they know the selection has been processed.</p>
+        </div>
+        <img class = "img" src = "Meal Plan.png" alt = "meal plan"><br>
+        <img class = "img" src = "Meal Plan 2.png" alt = "meal plan"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Selecting a meal plan.</span> When it is time for Sam to select a 
+                meal plan, all he has to do is click on "Dining," choose a meal plan, and save. In the current MyHousing, 
+                selection is similar except there is no information on what each meal plan offers. Sam would have to find 
+                it on a page in the Brandeis website. Moving the information to MyHousing is much more convenient. </p>
+        </div>
+        <div class = "title">
+            <h2>Feedback & Reflection</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Three teaching assistants evaluated our redesign. They felt the redesign was much more 
+                intuitive and had higher utility, but could be clearer in a couple of aspects. They felt an explanation on what the 
+                selection number meant would be helpful, and that the floor plans may not have enough information for underclassmen who 
+                are not familiar with the different dorms. Overall, it was good but could be even better.</p>
+            <p align = "justify">This project was the first time I really got to test my design. I was aware before about the importance of 
+                testing, but now I can say I truly understand why it's needed. The paper prototype helped me see how users were responding 
+                to my design, so I knew what to keep and what to change. The evaluation from the teaching assistants also reminded me 
+                that any design has room for improvement. If I were to redo the assignment, I would incorporate their 
+                feedback and expand some of the features more.</p>
+        </div>
+        <div id ="footer"></div>
+    </body>
+</html>

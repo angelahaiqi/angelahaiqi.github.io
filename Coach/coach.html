@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Site</title>
+    </head>
+    <body>
+        <a href="../works.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../works.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1wGB_5GDBbL7huiAmC4E4dSfIrRVPkvfp/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
+        <div class = "header">
+            <h1>Coach Mobile App</span></h1>
+        </div>
+        <img class = "banner" src = "coach_banner.png" alt = "banner">
+        <div class = "title">
+            <h2>Overview</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">This past summer my team of six ranked 3rd in a Tapestry Case Study Competition, where we 
+                designed a mobile app for the luxury brand, Coach.</p>
+        </div>  
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Roles:</span> UX/UI Designer, UX Researcher</p>
+            <p align = "justify"><span class = "bold">Date:</span> June 24th - July 30th, 2019</p>
+            <p align = "justify"><span class = "bold">Tools:</span> Sketch, Adobe Photoshop</p>
+        </div> 
+        <div class = "title">
+            <h2>Background</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Last summer I interned at kate spade. My internship was under the Tapestry Summer 
+                Intership Program. Tapestry is the parent company of Coach, kate spade, and Stuart Weitzman. Every year, 
+                they hold a case study competition for all interns. Five other interns and I were grouped together and 
+                tasked with designing a mobile app for Coach.</p>
+        </div>
+        <div class = "title">
+            <h2>The Challenge</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">Create an innovative mobile app that would appeal to all demographics, 
+                especially Gen Z, and still maintain Coach's values.</span></p>
+            <p align = "justify">Coach.com was seeing a huge jump in the number of mobile visitors. 
+                There was also a huge increase in conversion rates through mobile. As a result, Coach was exploring the 
+                introduction of a mobile app for consumers to use at home and potentially in stores to enhance the Coach 
+                shopping experience. Many of their rival companies had developed mobile apps to capitalize on convenience and 
+                open a new line of communication between customer and brand. Coach also faced difficulties connecting to 
+                younger generations and wanted to change that.</p>    
+        </div>
+        <div class = "title">
+            <h2>Research</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Before working on the actual design, we needed to get an idea of what consumers are 
+                looking for. Our research found that <span class = "bold">Augmented/Virtual Reality</span> was one of the big technological trends. 
+                The Gucci app, for example, uses AR to allow users to try on shoes and glasses. Through more research and 
+                interviewing Tapestry employees, we found these other key points:</p>
+            <p align = "justify"><span class = "bold">1.</span> 57% of customers are using mobile apps while in-store.<br><br>
+                <span class = "bold">2.</span> 48% of shoppers would be more likely to shop at a retailer that utilizes AR/VR. <br><br>
+                <span class = "bold">3.</span> Wish lists/favorites features is a major reason why people would prefer mobile app over website. <br><br>
+                <span class = "bold">4.</span> Gen Z is a rewards-driven group, with 83% showing greater loyalty to brands that 
+                provide rewards and surprises.</p>
+        </div>
+        <div class = "title">
+            <h2>User Persona</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Since the app would mainly target Gen Z, we developed a Gen Z persona to further help us understand 
+            what the app needed.</p><br>
+        </div>
+        <img class = "img" src = "Emily Young.png" alt = "persona"><br>
+        <div class = "title">
+            <h2>Ideation</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Based off of our research, we decided to create an app that would:</p>
+            <p align = "justify"><span class = "bold">1.</span> Utilize AR/VR to allow users to quickly try on products in/out of stores.<br><br>
+                <span class = "bold">2.</span> Build an online community by letting users share/save photos/products and 
+                featuring social media influencers/Coach ambassadors.<br><br>
+                <span class = "bold">3.</span> Utilize a rewards system to incentivize users to keep using the app.</p>
+            <p align = "justify">Once we formulated an idea, we created a flow chart to help us flesh out the details.</p><br>
+        </div>
+        <img class = "img" src = "flow chart.jpg" alt = "flow chart"><br>
+        <div class = "text">
+            <p align = "justify">One of my teammates, Morgan Rossi, also drew a few amazing sketches to help think of the app's appearance!</p>
+        </div>
+        <figure>
+            <img class = "img" src = "sketches1.png" alt = "sketches">
+            <img class = "img" src = "sketches2.png" alt = "sketches">
+            <figcaption>Thanks Morgan :)</figcaption><br>
+        </figure>
+        <div class = "text"><p align = "justify">For further inspiration, we visited the recently opened Coach store in Hudson Yards, 
+            NYC, since that's the store design Coach is pushing forward. There's a large pink room in the store, so 
+            we decided to make pink a central color in the app. The store also has a customization lab that features a 
+            neon sign on a metal fence, so we made that a motif as well.</p><br>
+        </div>
+        <figure>
+            <img class = "img" src = "coach_store1.jpg" alt = "pink room"><br>
+            <img class = "img" src = "coach_store2.jpg" alt = "neon sign">
+            <figcaption>Lots of cute details in the store but the pink wall and neon sign were definitely my fave!</figcaption><br>
+        </figure>
+        <div class = "title">
+            <h2>High Fidelity Wireframes</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">These wireframes were designed by me, Morgan Rossi, and 
+            Isabella Buccellati. Though we all contributed in each one, I was mainly responsible for the home page, 
+            shop page, and rewards system.
+            </span></p>
+        </div>
+        <img class = "img" src = "icon.png" alt = "icon">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The app icon.</span> The goggles are the "C" from Coach. They're a nod to the 
+                VR aspect of the app and symbolize viewing the world through Coach's eyes. The background is a peach color that 
+                Coach commonly uses for their products.</p><br>
+        </div>
+        <img class = "img" src = "home.png" alt = "home"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The home page.</span> Since this is the page users see first, we wanted it get them 
+                excited about exploring the app. The top section would feature a new, exciting thing happening at Coach. In this design, 
+                users can watch Coach's collection at NYFW live, only on the app. Below could be new arrivals and the latest posts from 
+                Coach's ambassadors.
+                At the very top, users can search through the app and access settings to change their personal/credit card information. 
+                The bottom nav bar shows the core pages.</p>
+        </div>
+        <img class = "img" src = "social.png" alt = "connect"><br>
+        <div class = "text">
+            <p align = "justify">To appeal to Gen Z, we created a <span class = "bold">social platform</span> where people can share how they wear 
+                Coach and save posts made by others. Users can also follow Coach's ambassadors. The posts are listed 
+                in a blog-like layout, as opposed to a standard grid, to make the page more fun and interesting.</p>
+        </div>
+        <img class = "img" src = "shop.png" alt = "shop">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The shop page.</span> To organize the products better, women, men, and sale products are 
+                divided up and everything can be sorted and filtered. Users can also access their VR 
+                fitting room through here. Again, note the blog layout for the products. Users also have the 
+                option to save items they like.</p><br>
+        </div>
+        <img class = "img" src = "fittingroom.jpg" alt = "fitting room"><br>
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The fitting room.</span> The fitting room. When users first set 
+                up an account, they are asked to create an avatar, which they can edit anytime. The avatar can try on 
+                all the products to give users an idea what they would look like on them. We felt this feature was 
+                important because many people hesitate to buy products online out of fear that it would look bad on them. </p>
+        </div>
+        <img class = "img" src = "camera_me.png" alt = "camera and profile">
+        <img class = "img" src = "charms.png" alt = "charms">
+        <div class = "text">
+            <p align = "justify">To make the app usable in stores, we've included a <span class = "bold">camera</span> where users 
+                can scan the QR code of a product and try them on virtually. This would help users save time 
+                from waiting for an available fitting room and putting on/taking off items.</p>
+            <p align = "justify">Your <span class = "bold">profile page</span> is where you can edit your avatar and view your saved posts. 
+                You can also view your <span class = "bold">rewards.</span> A rewards system would further motivate people to use the app. We created a 
+                rewards system where people can win Coach charms that are used for customization. The system is based 
+                off of Snapchat trophies. There are different sets of charms, where each charm builds off of each other. 
+                For example, to unlock the black flower, users would need to spend over $100. To unlock the blue flower, 
+                users would need to spend at $500, and to unlock the green flower, a $1000. Each reward would offer a 
+                discount or access to an event or sale. There's an expiration date for the rewards so that users can't 
+                stack too many discounts on top of each other and get items for free. 
+            </p>
+        </div>
+        <div class = "title">
+            <h2>Feedback & Reflection</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Responses from the judges were positive. They found our design to be creative and 
+                innovative. Their one critique was that the "Connect" page and profile felt a bit crowded, which could 
+                be fixed by adding more spacing.</p>
+            <p align = "justify">This was my first time designing a mobile app, and for a large company. 
+                I was pushed to think bigger and smaller at the same time: I had to come up with innovative 
+                ideas while keeping in mind that a phone screen is tiny. It was a new experience that 
+                helped me grow greatly. If I were to redo it, I would test the design with users to see how they respond.
+            </p>
+        </div>
+        <div id ="footer"></div>
+    </body>
+</html>
