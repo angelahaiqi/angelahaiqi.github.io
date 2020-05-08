@@ -1,9 +1,6 @@
 .fa-envelope {
     color: black;
     text-decoration: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-right: 25px;
 } 
 .fa-envelope:hover {
     color: #8790ff;
@@ -12,7 +9,6 @@
 .fa-linkedin-in {
     color: black;
     text-decoration: none;
-    padding: 50px 25px 50px 25px;
 } 
 .fa-linkedin-in:hover {
     color: #8790ff;
@@ -21,44 +17,80 @@
 .fa-github {
     color: black;
     text-decoration: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 25px;
 } 
 .fa-github:hover {
     color: #8790ff;
     transition: 1s;
 }
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 599px) {
     .fa-envelope {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 25px;
         font-size: 25px;
     }
     .fa-linkedin-in {
+        padding: 50px 25px 50px 25px;
         font-size: 25px;
     } 
     .fa-github {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        font-size: 25px;
+    } 
+}   
+@media screen and (min-width: 600px) and (max-width: 999px) {
+    .fa-envelope {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 25px;
+        font-size: 25px;
+    }
+    .fa-linkedin-in {
+        padding: 50px 25px 50px 25px;
+        font-size: 25px;
+    } 
+    .fa-github {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
         font-size: 25px;
     } 
 } 
 @media screen and (min-width: 1000px) and (max-width: 1024px) {
     .fa-envelope {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 25px;
         font-size: 30px;
     }
     .fa-linkedin-in {
+        padding: 50px 25px 50px 25px;
         font-size: 30px;
     } 
     .fa-github {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
         font-size: 30px;
     } 
 } 
 @media screen and (min-width: 1025px) {
     .fa-envelope {
-        font-size: 35px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 25px;
+        font-size: 30px;
     }
     .fa-linkedin-in {
-        font-size: 35px;
+        padding: 50px 25px 50px 25px;
+        font-size: 30px;
     } 
     .fa-github {
-        font-size: 35px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 25px;
+        font-size: 30px;
     } 
-}        
+}           
