@@ -9,13 +9,12 @@
         <link rel="manifest" href="../site.webmanifest">
         <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
+       <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
         <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
         <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
         <script> 
             $(function(){
-                $("#nav").load("../nav.html");
                 $("#footer").load("../contact.html"); 
             });
         </script>
@@ -68,7 +67,15 @@
         </style>
     </head>
     <body>
-        <div id="nav"></div>
+        <a href="../index.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../index.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1vaHADzs3PIkqHx7wHqjXxVXJlzSnLLHj/view?usp=sharing">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
         <script>
             $(function() {
                 $(".burger").on("click", function() {
