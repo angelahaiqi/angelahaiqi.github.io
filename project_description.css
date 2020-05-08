@@ -2,7 +2,6 @@ body {
     background-color: white;
 }
 .header {
-    color: black;
     font-family: "Lato";
     text-align: left;
 }
@@ -11,12 +10,13 @@ body {
     text-align: left;
 }
 .text {
-    color: black;
-    font-family: "Lato-Light";
+    font-family: "Lato";
     text-align: left;
+    font-weight: 300;
 }
 .bold {
-    font-family: "Lato-Bold";
+    font-family: "Lato";
+    font-weight: 700;
 }
 a {
     color: #8790ff;
