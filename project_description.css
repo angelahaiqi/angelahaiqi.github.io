@@ -77,7 +77,7 @@ figcaption {
         width: 80%;
     }
     .thumb {
-        width: 100%;
+        width: 50%;
         margin: 10px 10px;
         padding-top: 10px;
         align-self: center;
@@ -104,7 +104,7 @@ figcaption {
         width: 50%;
     }
     .thumb {
-        width: 100%;
+        width: 50%;
         margin: 10px 10px;
         padding-top: 20px;
         align-self: center;
