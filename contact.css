@@ -40,14 +40,25 @@
         font-size: 25px;
     } 
 } 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
     .fa-envelope {
-        font-size: 40px;
+        font-size: 30px;
     }
     .fa-linkedin-in {
-        font-size: 40px;
+        font-size: 30px;
     } 
     .fa-github {
-        font-size: 40px;
+        font-size: 30px;
     } 
-}         
+} 
+@media screen and (min-width: 1025px) {
+    .fa-envelope {
+        font-size: 35px;
+    }
+    .fa-linkedin-in {
+        font-size: 35px;
+    } 
+    .fa-github {
+        font-size: 35px;
+    } 
+}        

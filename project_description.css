@@ -53,8 +53,8 @@ figure {
     margin: auto;
 }
 figcaption {
-    font-family: "Lato-Italic";
-    color: black;
+    font-family: "Lato";
+    font-style: italic;
     text-align: center;
 }
 @media screen and (max-width: 599px) {
