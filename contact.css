@@ -27,15 +27,15 @@
         padding-top: 50px;
         padding-bottom: 50px;
         padding-right: 25px;
-        font-size: 20px;
+        font-size: 25px;
     }
     .fa-linkedin-in {
         padding: 50px 25px 50px 25px;
-        font-size: 20px;
+        font-size: 25px;
     } 
     .fa-github {
         padding: 50px 25px 50px 25px;
-        font-size: 20px;
+        font-size: 25px;
     } 
 }   
 @media screen and (min-width: 600px) and (max-width: 999px) {
