@@ -80,6 +80,7 @@ figcaption {
         width: 100%;
         margin: 10px 10px;
         padding-top: 10px;
+        align-self: center;
     }
     figcaption {
         font-size: 10px;
@@ -106,6 +107,7 @@ figcaption {
         width: 100%;
         margin: 10px 10px;
         padding-top: 20px;
+        align-self: center;
     }
 } 
 @media screen and (min-width: 1000px) and (max-width: 1024px) {
