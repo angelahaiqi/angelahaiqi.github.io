@@ -33,12 +33,6 @@
         padding: 50px 25px 50px 25px;
         font-size: 25px;
     } 
-    .fa-github {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 25px;
-        font-size: 25px;
-    } 
 }   
 @media screen and (min-width: 600px) and (max-width: 999px) {
     .fa-envelope {
@@ -49,12 +43,6 @@
     }
     .fa-linkedin-in {
         padding: 50px 25px 50px 25px;
-        font-size: 25px;
-    } 
-    .fa-github {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 25px;
         font-size: 25px;
     } 
 } 
@@ -69,12 +57,6 @@
         padding: 50px 25px 50px 25px;
         font-size: 30px;
     } 
-    .fa-github {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 25px;
-        font-size: 30px;
-    } 
 } 
 @media screen and (min-width: 1025px) {
     .fa-envelope {
@@ -85,12 +67,6 @@
     }
     .fa-linkedin-in {
         padding: 50px 25px 50px 25px;
-        font-size: 30px;
-    } 
-    .fa-github {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        padding-left: 25px;
         font-size: 30px;
     } 
 }           
