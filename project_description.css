@@ -8,14 +8,15 @@ body {
 .title {
     font-family: "Lato";
     text-align: left;
+    font-weight: 400;
 }
 .text {
-    font-family: "Lato";
+    font-family: "Raleway";
     text-align: left;
-    font-weight: 300;
+    font-weight: 400;
 }
 .bold {
-    font-family: "Lato";
+    font-family: "Raleway";
     font-weight: 700;
 }
 a {
@@ -121,6 +122,7 @@ figcaption {
     .text {
         padding-left: 200px;
         padding-right: 200px;
+        font-size: 20px;
     }
     .img {
         padding-top: 50px;
@@ -141,6 +143,7 @@ figcaption {
     .title {
         padding-top: 10px;
         padding-left: 300px;
+        font-size: 20px;
     }
     .text {
         padding-left: 300px;
