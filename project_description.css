@@ -15,6 +15,11 @@ body {
     text-align: left;
     font-weight: 400;
 }
+.challenge {
+    font-family: "Raleway";
+    text-align: left;
+    font-weight: 600;
+}
 .bold {
     font-family: "Raleway";
     font-weight: 700;
@@ -73,6 +78,12 @@ figcaption {
         font-size: 12px;
         line-height: 20px;
     }
+    .challenge {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 14px;
+        line-height: 20px;
+    }
     .img {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -102,6 +113,12 @@ figcaption {
         font-size: 14px;
         line-height: 25px;
     }
+    .challenge {
+        padding-left: 150px;
+        padding-right: 150px;
+        font-size: 16px;
+        line-height: 25px;
+    }
     .img {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -128,6 +145,12 @@ figcaption {
         font-size: 20px;
         line-height: 25px;
     }
+    .challenge {
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 22px;
+        line-height: 25px;
+    }
     .img {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -146,13 +169,19 @@ figcaption {
     }
     .title {
         padding-top: 10px;
-        padding-left: 300px;
+        padding-left: 350px;
         font-size: 24px;
     }
     .text {
-        padding-left: 300px;
-        padding-right: 300px;
+        padding-left: 350px;
+        padding-right: 350px;
         font-size: 16px;
+        line-height: 25px;
+    }
+    .challenge {
+        padding-left: 350px;
+        padding-right: 350px;
+        font-size: 18px;
         line-height: 25px;
     }
     .img {
@@ -181,6 +210,12 @@ figcaption {
         padding-left: 500px;
         padding-right: 500px;
         font-size: 20px;
+        line-height: 35px;
+    }
+    .challenge {
+        padding-left: 500px;
+        padding-right: 500px;
+        font-size: 22px;
         line-height: 35px;
     }
     .img {
