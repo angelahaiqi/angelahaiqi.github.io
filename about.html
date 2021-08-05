@@ -38,11 +38,6 @@
                 font-family: "Raleway";
                 text-align: left;
             }
-            .caption {
-                color: black;
-                font-family: "Raleway";
-                text-align: left;
-            }
             a {
                 color: #8790ff;
                 text-decoration: none;
@@ -63,15 +58,14 @@
                     padding-left: 20px;
                     padding-right: 20px;
                     font-size: 14px; 
+                    line-height: 20px;
                 }
                 .fav {
                     padding-top: 15px;
                     padding-left: 20px;
                     padding-right: 20px;
                     font-size: 14px; 
-                }
-                .caption {
-                    display: none; 
+                    line-height: 20px;
                 }
                 .img {
                     display: block;
@@ -90,15 +84,14 @@
                     padding-left: 95px;
                     padding-right: 95px;
                     font-size: 16px; 
+                    line-height: 25px;
                 }
                 .fav {
                     padding-top: 20px;
                     padding-left: 95px;
                     padding-right: 95px;
                     font-size: 16px; 
-                }
-                .caption {
-                    display: none; 
+                    line-height: 25px;
                 }
                 .img {
                     display: block;
@@ -114,27 +107,22 @@
                 }
                 .bio {
                     padding-left: 50px;
-                    padding-bottom: 175px;
+                    padding-bottom: 25px;
                     font-size: 18px; 
+                    line-height: 25px;
                 }
                 .fav {
-                    display: none; 
-                }
-                .caption {
-                    font-size: 18px; 
-                    float: right; 
-                    padding-right: 60px; 
-                    padding-left: 25px;
+                    display: none;
                 }
                 .img {
-                    width: 45%;
+                    width: 40%;
                     padding-top: 20px;
                     padding-right: 30px; 
                     padding-left: 50px;
                     float: right; 
                 }
             } 
-            @media screen and (min-width: 1075px) {
+            @media screen and (min-width: 1075px) and (max-width: 1600px) {
                 .header {
                     padding-left: 75px;
                     font-size: 30px;
@@ -142,21 +130,45 @@
                 .bio {
                     padding-left: 75px;
                     font-size: 18px; 
+                    line-height: 25px;
                 }
                 .fav {
                     padding-left: 75px;
+                    padding-top: 15px;
                     font-size: 18px; 
-                }
-                .caption {
-                    display: none; 
+                    line-height: 25px;
                 }
                 .img {
-                    width: 40%;
-                    padding-right: 55px; 
+                    width: 35%;
+                    padding-right: 70px; 
                     padding-left: 70px;
                     float: right; 
                 }
-            }           
+            } 
+            @media screen and (min-width: 1600px) {
+                .header {
+                    padding-left: 75px;
+                    font-size: 32px;
+                }
+                .bio {
+                    padding-left: 75px;
+                    font-size: 24px; 
+                    line-height: 35px;
+                }
+                .fav {
+                    padding-left: 75px;
+                    padding-top: 15px;
+                    padding-bottom: 10px;
+                    font-size: 24px; 
+                    line-height: 35px;
+                }
+                .img {
+                    width: 35%;
+                    padding-right: 70px; 
+                    padding-left: 70px;
+                    float: right; 
+                }
+            }                     
         </style>
     </head>
     <body>
@@ -186,31 +198,17 @@
             <h1>Hello, I'm <span style= 'color: #8790ff'>Angela!</span></h1>
         </div>
         <img class = "img" src = "Assets/me.jpg" alt = "beautiful girl"> 
-        <div class = "caption">
-            <p><span style= 'color: #8790ff'><b>Some favorites of mine</span></b><br><br>
-                1. <span style= 'color: #8790ff'>Movies</span> <br>The Grand Budapest Hotel, Her, Ghibli/Disney films<br>
-                2. <span style= 'color: #8790ff'>Books</span><br> Khaled Hosseini and Madeline Miller novels,<br> Harry Potter<br>
-                3. <span style= 'color: #8790ff'>TV shows</span> <br>Avatar (Last Airbender + Legend of Korra), Dark,<br> Parks & Recreation<br>
-                4. <span style= 'color: #8790ff'>Music</span><br>classic/indie rock, hip-hop<br>
-                5. <span style= 'color: #8790ff'>Past-times</span><br>running, drawing, writing, chilling with my dog</p>
-        </div>
         <div class = "wrapper">
             <div class = "bio">
                 <p align= "justify">
-                    It all started with animated films. I always loved animals, and cartoons would bring them to life. Inspired, I began 
-                    drawing animals of my own. This led to me borrowing art books from the library, to visiting all the museums and galleries in NYC,
-                    to teaching myself design software. I loved creating, but was told to pursue other fields. Growing up in a time where technology evolved so 
-                    rapidly, I chose to study Computer Science at Brandeis University. I was fascinated by technology's potential to solve problems and move society 
-                    forward. I also studied Economics, as I was drawn to its core of thinking about complex subjects from different perspectives. To the shock of many, I 
-                    picked up a third major - East Asian Studies - purely because I was and still am a huge Chinese history nerd.
-                </p>
-                <p align= "justify">Although I loved my classes and thought I was going to be a software engineer, I still did graphic/web design on the side. Then, my junior 
-                    year of undergrad, I learned about UX/UI design and knew immediately that was what I wanted to do. Ultimately, I want to help others, and design provides 
-                    the genuine empathy and creativity that technology needs to do so. Since then, I've been on a self-motivated journey where I've expanded my 
-                    design skills and thinking through various projects and internships.
+                    I went to Brandeis University and triple-majored (yes, I know) in Computer Science, Economics, and East Asian Studies. I was convinced I would 
+                    end up as a software engineer, but did a lot of art/design on the side, having loved all things creative since childhood. When I discovered UX/UI design during my junior year, 
+                    I knew immediately that was what I wanted to do. The reason why I studied CS in the first place was because of technology's ability to solve problems and 
+                    help people; design is what provides the genuine empathy and creativity that technology needs to do so. Since then, I've been on a self-motivated journey where I've expanded my 
+                    design skills and thinking through various projects and work experience.
                 </p>
                 <p align= "justify">Currently, I'm working as a UX/UI Designer for <a href = "https://nesn.com">NESN, the New England Sports Network</a>. I am helping to redesign and expand its 
-                    ever-growing digital presence which impacts hundreds of thousands of people across the country. I'm always looking to 
+                    ever-growing digital presence which impacts millions of people across the country. I'm always looking to 
                     connect with others, so feel free to reach out for collaborations or just chat! :)</p>
             </div>
             <div class = "fav">
@@ -219,7 +217,7 @@
                     2. <span style= 'color: #8790ff'>Books:</span> Khaled Hosseini and Madeline Miller novels<br>
                     3. <span style= 'color: #8790ff'>TV shows:</span> Avatar (Last Airbender + Legend of Korra), Dark, Parks & Recreation<br>
                     4. <span style= 'color: #8790ff'>Music:</span> indie rock/pop, hip-hop<br>
-                    5. <span style= 'color: #8790ff'>Past-times:</span> running, drawing, watching Netflix, chilling with my dog</p>
+                    5. <span style= 'color: #8790ff'>Past-times:</span> running, drawing, watching Netflix, chilling with my dog</p><br>
             </div>
         </div>
         <div id="footer"></div>

@@ -65,12 +65,13 @@ figcaption {
     }
     .title {
         padding-left: 25px;
-        font-size: 12px;
+        font-size: 14px;
     }
     .text {
         padding-left: 25px;
         padding-right: 25px;
-        font-size: 11px;
+        font-size: 12px;
+        line-height: 20px;
     }
     .img {
         padding-top: 20px;
@@ -98,6 +99,8 @@ figcaption {
     .text {
         padding-left: 150px;
         padding-right: 150px;
+        font-size: 14px;
+        line-height: 25px;
     }
     .img {
         padding-top: 30px;
@@ -123,6 +126,7 @@ figcaption {
         padding-left: 200px;
         padding-right: 200px;
         font-size: 20px;
+        line-height: 25px;
     }
     .img {
         padding-top: 50px;
@@ -135,19 +139,49 @@ figcaption {
         padding-top: 20px;
     }
 } 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
     .header {
         padding-left: 75px;
-        font-size: 25px;
+        font-size: 28px;
     }
     .title {
         padding-top: 10px;
         padding-left: 300px;
-        font-size: 20px;
+        font-size: 24px;
     }
     .text {
         padding-left: 300px;
         padding-right: 300px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .img {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 50%;
+    }
+    .thumb {
+        width: 33%;
+        margin: 10px 10px;
+        padding-top: 20px;
+    }
+} 
+
+@media screen and (min-width: 1600px) {
+    .header {
+        padding-left: 75px;
+        font-size: 32px;
+    }
+    .title {
+        padding-top: 10px;
+        padding-left: 500px;
+        font-size: 28px;
+    }
+    .text {
+        padding-left: 500px;
+        padding-right: 500px;
+        font-size: 20px;
+        line-height: 35px;
     }
     .img {
         padding-top: 50px;
