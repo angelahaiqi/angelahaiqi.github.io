@@ -2,26 +2,25 @@ body {
     background-color: white;
 }
 .header {
-    font-family: "Lato";
+    font-family: "Noto Sans JP";
     text-align: left;
 }
 .title {
-    font-family: "Lato";
+    font-family: "Noto Sans JP";
     text-align: left;
-    font-weight: 400;
 }
 .text {
-    font-family: "Raleway";
+    font-family: "Roboto";
     text-align: left;
     font-weight: 400;
 }
 .challenge {
-    font-family: "Raleway";
+    font-family: "Roboto";
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
 }
 .bold {
-    font-family: "Raleway";
+    font-family: "Roboto";
     font-weight: 700;
 }
 a {
