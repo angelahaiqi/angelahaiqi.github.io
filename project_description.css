@@ -25,7 +25,20 @@ body {
 }
 a {
     color: #8790ff;
+    text-decoration: underline;
+}
+a:hover {
+    color: #8790ff;
     text-decoration: none;
+}
+.prevnext {
+    text-align: center;
+}
+.next {
+    font-family: "Noto Sans JP";
+}
+.prev {
+    font-family: "Noto Sans JP";    
 }
 .banner {
     height: auto;
@@ -83,6 +96,17 @@ figcaption {
         font-size: 14px;
         line-height: 20px;
     }
+    .prevnext {
+        padding-top: 15px;
+    }
+    .prev {
+        padding-right: 50px;
+        font-size: 14px;
+    }
+    .next {
+        padding-left: 50px;
+        font-size: 14px;
+    }
     .img {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -118,6 +142,15 @@ figcaption {
         font-size: 16px;
         line-height: 25px;
     }
+    .prevnext {
+        padding-top: 20px;
+    }
+    .prev {
+        padding-right: 115px;
+    }
+    .next {
+        padding-left: 115px;
+    }
     .img {
         padding-top: 30px;
         padding-bottom: 30px;
@@ -133,10 +166,11 @@ figcaption {
 @media screen and (min-width: 1000px) and (max-width: 1024px) {
     .header {
         padding-left: 50px;
-        font-size: 20px;
+        font-size: 28px;
     }
     .title {
         padding-left: 200px;
+        font-size: 24px;
     }
     .text {
         padding-left: 200px;
@@ -149,6 +183,17 @@ figcaption {
         padding-right: 200px;
         font-size: 22px;
         line-height: 25px;
+    }
+    .prevnext {
+        padding-top: 20px;
+    }
+    .prev {
+        padding-right: 150px;
+        font-size: 24px;
+    }
+    .next {
+        padding-left: 150px;
+        font-size: 24px;
     }
     .img {
         padding-top: 50px;
@@ -183,6 +228,17 @@ figcaption {
         font-size: 18px;
         line-height: 25px;
     }
+    .prevnext {
+        padding-top: 25px;
+    }
+    .prev {
+        padding-right: 200px;
+        font-size: 24px;
+    }
+    .next {
+        padding-left: 200px;
+        font-size: 24px;
+    }
     .img {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -216,6 +272,17 @@ figcaption {
         padding-right: 500px;
         font-size: 22px;
         line-height: 35px;
+    }
+    .prevnext {
+        padding-top: 25px;
+    }
+    .prev {
+        padding-right: 250px;
+        font-size: 28px;
+    }
+    .next {
+        padding-left: 250px;
+        font-size: 28px;
     }
     .img {
         padding-top: 50px;
