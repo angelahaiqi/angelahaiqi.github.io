@@ -39,7 +39,7 @@
             <h2>Overview</h2>
         </div>
         <div class = "text">
-            <p align = "justify">My friend, a developer, asked me to design a web application with him for our school's 
+            <p align = "justify">My friend, a developer, asked me to design a web application with him for Brandeis University's 
                 admissions office that would allow college tour guides to effectively schedule tours. It is now currently in use.</p>
         </div>  
         <div class = "text">
@@ -50,48 +50,50 @@
         <div class = "title">
             <h2>The Challenge</h2>
         </div>
-        <div class = "challenge">
-            <p align = "justify">The tour-scheduling process, which relied on an Excel sheet, was tedious and clunky. 
-                How could I design an app that would make the process easier and more efficient?</p>
-        </div>
         <div class = "text">
-            <p align = "justify">My friend was a student tour guide for our school. The tour guides shared a 
-                giant Excel sheet that contained everyone's information and schedules, and any upcoming tours. Through the 
-                Excel sheet, guides could pick up any tours that were available. With so much unorganized information in one 
-                place, it was tedious to navigate and extremely difficult to keep track of what other guides were doing. 
+            <p align = "justify">My friend was a student tour guide for our alma mater, Brandeis University. The guides shared an 
+                Excel sheet that contained everyone's information and a list of upcoming tours. On the 
+                Excel sheet, guides could pick up available tours by typing their name next to them. This system might've been alright if there were only a few 
+                guides or tours were infrequent. But Brandeis had tours throughout each week, even multiple times in a day, 
+                and 30+ guides, with more being hired each semester. The sheet was therefore filled with giant blocks of information.  
+                It was tedious to navigate and extremely difficult to keep track of what other guides were doing. 
                 As a result, he received approval from the Admissions Office to develop an app that would streamline the 
                 tour-scheduling process.</p>
+        </div>
+        <div class = "highlight">
+            <p align = "justify">The tour-scheduling process, which relied on an Excel sheet, was tedious and clunky. 
+                How could I design an app that would make the process easier and more efficient?</p>
         </div>
         <div class = "title">
             <h2>The Process</h2>
         </div>
         <div class = "text">
-            <p align = "justify">Before we could think about how we wanted the app to work, we first had to think about 
-            <span class = "bold">what kind of app</span> we wanted. We had three options: web app, mobile app, and automation process. 
-            We analyzed the pros and cons of each platform.</p>
+            <p align = "justify">The first step was determining exactly who our users were and what they needed. To do this, we consulted with the lead tour guide 
+                and guide supervisor. Since my friend was a regular student tour guide, I would also ask him questions on how their team functioned. I learned that the 
+                Admissions Office actually had three different types of student representatives: tour guides, chatters, and hosts. Their titles determined what sort of 
+                tours they led, but otherwise there was no difference in how they operated so I didn't need to distinguish between them. For the sake of simplicity, I will be referring to 
+                all three as just "guides."</p>
         </div>
-        <img class = "img" src = "platform_analysis.png" alt = "platform analysis">
-        <div class = "text">
-            <p align = "justify"><span class = "bold">Ultimately, we chose to create a web app as we felt it would offer the most utility. 
-                My friend would code it using React. From there, we brainstormed possible features. We also consulted 
-                with the lead tour guide and guide supervisor to figure out what was needed. We defined two types of users and their functionalities:</span></p>
+        <div class = "highlight">
+            <p align = "justify">The key insight was that guides typically signed up 
+                for tours themselves, but sometimes will be assigned certain ones, either due to lack of coverage or because the supervisor felt they would 
+                be a good fit. If a guide needed to drop a tour, they were responsible for finding a replacement.</span></p>
         </div>
-        <img class = "img" src = "users.png" alt = "users">
         <div class = "text">
-            <p align = "justify">From there, we came up with other features:</p>
-            <p align = "justify"><span class = "bold">1.</span> Admins can add tour times, along with how many tours are available. <br><br>
-                <span class = "bold">2.</span> Tour guides would add in their availability for the tour times created. 
-                They could edit this availability at any time. They could also set a maximum number of tours so that they are not assigned more than 
-                they can handle.<br><br>
-                <span class = "bold">4.</span> E-mails would be sent out 24 hours before tours to remind students.<br><br>
-                <span class = "bold">5.</span> If a tour guide drops a tour, an e-mail would be sent out to all tour guides 
-                with that time marked as available. They could then claim the tour, and it would be assigned to them.<br><br>
-                <span class = "bold">6.</span> List of tour guides with searchable majors/potentially clubs, to help see if a 
-                guide is a good match for a specific tour group (ex. a guide who is an international student could be a better 
-                fit for a group of prospective international students).</p>
-            <p align = "justify"><span class = "bold">Since it's a scheduling app, we decided a calendar-based app was the way to go. 
-                I researched other calendar apps, such as Google Calendar, for inspiration. I also looked into 
-                numerous social media apps, such as Facebook and Instagram, for the tour guide profiles.</span></p>
+            <p align = "justify">Based on these facts, I created this persona:</p>
+        </div>
+        <img class = "img" src = "Mitchell Sanders.png" alt = "user persona">
+        <div class = "text">
+            <p align = "justify">Essentially, our users, the student tour guides, needed these features:</p>
+            <p align = "justify"><span class = "bold">1.</span> The ability to immediately see what tours were available and pick them up.<br><br>
+                <span class = "bold">2.</span> The ability to set/edit their availability, so that others can see if they could possibly cover a certain tour. 
+                Knowing that all guides are busy students, we decided that guides could also set a minimum/maximum number of tours to lead each month.<br><br>
+                <span class = "bold">3.</span> The ability to find other guides' info, so that they could contact them. The supervisor could also use this feature 
+                to match a guide to a specific tour (eg. if a tour group was made up of mainly prospective international students, a guide who was an 
+                international student themself should probably lead them).</p>
+            <p align = "justify">We decided a <span class = "bold">calendar-based app</span> was the way to go. It made the most sense, since 
+                guides need to see all the tours for each month at once. I researched calendar apps, such as Google Calendar, for inspiration. I also looked into 
+                numerous social media apps, such as Facebook and Instagram, for the guide profiles.</p>
         </div>
         <div class = "title">
             <h2>The Result</h2>
@@ -118,28 +120,30 @@
         <img class = "img" src = "Menu.png" alt = "menu"><br>
         <div class = "text">
             <p align = "justify"><span class = "bold">The home page.</span> It's set up to look like a calendar, making it 
-                intuitive to use. Any event for that month will be shown on its date. There is also a legend at the top for 
-                reference, and users have the option to only view their own tours. Users have the option 
-                to download the calendar to their Google Calendar so they have a copy of it. There is a menu on the top right-hand corner.</p>
+                intuitive to use. Guides can instantly see all the tours for that month and know from the colored dots 
+                which ones need coverage. There is a legend at the top in case they forget what a color represents. 
+                Guides also have the option to only view their own tours and download the calendar so they have a copy of it. 
+                There is a menu on the top right-hand corner.</p>
         </div>
         <img class = "img" src = "Tour Info.png" alt = "tour info"><br>
         <img class = "img" src = "Tour Confirmation.png" alt = "tour confirmation"><br>
         <div class = "text">
-            <p align = "justify"><span class = "bold">Covering a tour.</span> Users can click on each event and find information 
+            <p align = "justify"><span class = "bold">Covering a tour.</span> Guides can click on each event and find information 
             about it. They can then choose to cover the tour.</p>
         </div>
         <img class = "img" src = "Guide List.png" alt = "guides"><br>
         <div class = "text">
-            <p align = "justify"><span class = "bold">The guide list.</span> All users can see the full list of guides, 
-                along with the guide's information. Users can search for specific types of guides. They can also email 
-                them directly. These features can be helpful for matching a guide with a tour group or event.</p>
+            <p align = "justify"><span class = "bold">The guide list.</span> Everyone's contact info is clearly displayed. For extra convenience, 
+                their emails are linked. Guides can organize the list to their liking, sorting by alphabetical order or filtering by 
+                guide type or field of study. They can also view each other's profiles for more information. These features can be helpful for matching a guide with a 
+                tour group.</p>
         </div>
         <img class = "img" src = "Profile 1.png" alt = "profile"><br>
         <img class = "img" src = "Profile 2.png" alt = "profile"><br>
         <img class = "img" src = "Profile 3.png" alt = "stats"><br>
         <div class = "text">
-            <p align = "justify"><span class = "bold">Profile page.</span> Users fill out all their information here. 
-                The information is organized into different categories, and users can see clearly which category they're at. 
+            <p align = "justify"><span class = "bold">Profile page.</span> Guides fill out all their information here. 
+                The information is organized into different categories, and guides can see clearly which category they're at. 
                 They can change their profile photo, and also view tour stats to check their activity.</p>
         </div>
         <div class = "title">
