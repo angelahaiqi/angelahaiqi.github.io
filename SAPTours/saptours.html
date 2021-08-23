@@ -55,96 +55,116 @@
                 Excel sheet that contained everyone's information and a list of upcoming tours. On the 
                 Excel sheet, guides could pick up available tours by typing their name next to them. This system might've been alright if there were only a few 
                 guides or tours were infrequent. But Brandeis had tours throughout each week, even multiple times in a day, 
-                and 30+ guides, with more being hired each semester. The sheet was therefore filled with giant blocks of information.  
-                It was tedious to navigate and extremely difficult to keep track of what other guides were doing. 
-                As a result, he received approval from the Admissions Office to develop an app that would streamline the 
-                tour-scheduling process.</p>
+                and 40+ guides, with more being hired each semester. The sheet became a monstrous block of information that was difficult to navigate.
+                As a result, tours were not being picked up fast enough. The lead tour guide or guide supervisor would often have to step in and 
+                assign tours. Noticing this problem, my friend pitched an idea to develop a tour-scheduling app and asked me to be the designer.</p>
         </div>
         <div class = "highlight">
             <p align = "justify">The tour-scheduling process, which relied on an Excel sheet, was tedious and clunky. 
                 How could I design an app that would make the process easier and more efficient?</p>
         </div>
         <div class = "title">
-            <h2>The Process</h2>
+            <h2>User Research</h2>
         </div>
         <div class = "text">
-            <p align = "justify">The first step was determining exactly who our users were and what they needed. To do this, we consulted with the lead tour guide 
-                and guide supervisor. Since my friend was a regular student tour guide, I would also ask him questions on how their team functioned. I learned that the 
-                Admissions Office actually had three different types of student representatives: tour guides, chatters, and hosts. Their titles determined what sort of 
-                tours they led, but otherwise there was no difference in how they operated so I didn't need to distinguish between them. For the sake of simplicity, I will be referring to 
-                all three as just "guides."</p>
+            <p align = "justify">The first step was understanding who our users were and what they needed. To do this, we consulted with the lead tour guide 
+                and guide supervisor. Since my friend was a regular student tour guide, I would also ask him questions on how their team functioned. I 
+                learned two key things:</p>
         </div>
         <div class = "highlight">
-            <p align = "justify">The key insight was that guides typically signed up 
-                for tours themselves, but sometimes will be assigned certain ones, either due to lack of coverage or because the supervisor felt they would 
-                be a good fit. If a guide needed to drop a tour, they were responsible for finding a replacement.</span></p>
+            <p align = "justify">Guides were typically supposed to sign up for tours themselves, but may be assigned certain ones, 
+                either due to lack of coverage or because the supervisor felt they would be a good fit (eg. if a tour group was made up of prospective international 
+                students, a guide who was an international student themself should probably lead them). If a guide needed to drop a tour, they were responsible for finding a replacement.</p>
         </div>
         <div class = "text">
-            <p align = "justify">Based on these facts, I created this persona:</p>
+            <p align = "justify">Based on these facts, I created a persona to cement my understanding of our users.</p>
         </div>
         <img class = "img" src = "Mitchell Sanders.png" alt = "user persona">
         <div class = "text">
             <p align = "justify">Essentially, our users, the student tour guides, needed these features:</p>
             <p align = "justify"><span class = "bold">1.</span> The ability to immediately see what tours were available and pick them up.<br><br>
-                <span class = "bold">2.</span> The ability to set/edit their availability, so that others can see if they could possibly cover a certain tour. 
-                Knowing that all guides are busy students, we decided that guides could also set a minimum/maximum number of tours to lead each month.<br><br>
-                <span class = "bold">3.</span> The ability to find other guides' info, so that they could contact them. The supervisor could also use this feature 
-                to match a guide to a specific tour (eg. if a tour group was made up of mainly prospective international students, a guide who was an 
-                international student themself should probably lead them).</p>
-            <p align = "justify">We decided a <span class = "bold">calendar-based app</span> was the way to go. It made the most sense, since 
-                guides need to see all the tours for each month at once. I researched calendar apps, such as Google Calendar, for inspiration. I also looked into 
-                numerous social media apps, such as Facebook and Instagram, for the guide profiles.</p>
+                <span class = "bold">2.</span> The ability to find other guides' info, so that they could contact them.<br><br>
+                <span class = "bold">3.</span> The ability to set/edit their availability, so that other guides or the supervisors can see if they could possibly cover a certain tour. 
+                Since guides are all busy students, there should also be a way to ensure no one is contacted too often.</p>
         </div>
+        <div class = "title">
+            <h2>App Research</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Once we had a good idea on the user base, we needed to figure out what type of platform to build. We had three 
+            options: a web app, a mobile app, or an automation process. We analyzed the pros and cons of each.</p>
+        </div>
+        <img class = "img" src = "Platform Analysis.png" alt = "platform analysis">
+        <div class = "text">
+            <p align = "justify">We ruled out the automation process fairly quickly, due to its lack of utility. That left us deciding between a web 
+                and mobile app. We asked the guides what device they used when scheduling tours and found <span class = "bold">all of them pretty exclusively used their laptops.</span> 
+                Web app was definitely the way to go, which was lucky for my friend since it would be slightly easier for him to code than mobile.</p>
+            <p align = "justify">In terms of the app's interface, we felt a <span class = "bold">calendar-based app</span> made the most sense, since 
+                it would clearly show all the tour times for each month. I researched calendar apps, such as Google Calendar, to see what the best practices were.</p>
+        </div>
+        <img class = "img" src = "Google Calendar.png" alt = "google calendar">
+        <div class = "text">
+            <p align = "justify">As I mentioned before, sometimes a guide will be assigned to a specific tour. In order to determine if a guide would be a good fit for a tour, 
+            their personal information, such as field of study or hometown, would have to be stored somewhere. I looked into social media apps, such as Facebook 
+            and Instagram, for inspiration on how a profile should be designed.</p>
+        </div>
+        <img class = "img" src = "Social Media.png" alt = "social media apps">
         <div class = "title">
             <h2>The Result</h2>
         </div>
         <div class = "text">
-            <p align = "justify">We decided to call our app <span class = "bold">SAPTours (Student Ambassador Program Tours)</span>. 
-                My friend finished coding it and released it in December 2019. It is now currently being used by our school's 
-                admissions office. We can see tour guides are responding to it positively: it is much easier for guides and 
-                administration to keep track of tours.</p>
-            <p align = "justify">Due to technical limitations and the admissions office prioritizing different things, my vision could not yet be 
-                fully implemented. Below is my vision, which is from the point of view of a guide since the admin features were created in the 
-                backend. <a href = "https://drive.google.com/drive/folders/1-3ub-X_0zev6GJs1OonX1RLFcJ6IeQvm?usp=sharing">Here are screenshots of the real app.</a></p>
+            <p align = "justify">Now that the research was done, it was time to design! I created a few drafts, going back and forth with my friend to see 
+                what he was able or unable to develop. Eventually, I reached a design that I was happy with and also seemed feasible enough. We presented this design 
+                to the Admissions Office and after hearing their feedback, my friend began to code.</p>
+            <p align = "justify">My design did not end up being fully implemented, due to further technical limitations and the Admissions Office prioritizing 
+                different things. However, the general idea is there. Below is my vision. <a href = "https://drive.google.com/drive/folders/1-3ub-X_0zev6GJs1OonX1RLFcJ6IeQvm?usp=sharing">Here are screenshots of the real app.</a></p>
             </div>
         </div>
-        <img class = "img" src = "SAP Login.png" alt = "login"><br>
-        <img class = "img" src = "SAP Login – 2.png" alt = "login"><br>
+        <img class = "img" src = "Login.png" alt = "login">
         <div class = "text">
-            <p align = "justify"><span class = "bold">Login page.</span> I liked Facebook's straightforward approach to 
-                logging in and creating an account, displaying both on the same page. New/current users know immediately 
-                where to go. To ensure only Brandeis students can access it, the app checks for a Brandeis email. When 
-                signing up, users must indicate their roles.</p>
+            <p align = "justify"><span class = "bold">Login page.</span> I liked Facebook's approach, displaying login and 
+                sign up on the same page. Given how the Admissions Office was constantly hiring new guides, I felt it was important for the onboarding process 
+                to be prominent and straightforward. At the same time, current guides needed to check the app frequently, so login shouldn't 
+                be hidden either.</p>
         </div>
-        <img class = "img" src = "Home Page.png" alt = "home"><br>
-        <img class = "img" src = "Menu.png" alt = "menu"><br>
+        <img class = "img" src = "Home Page.png" alt = "home"> 
         <div class = "text">
-            <p align = "justify"><span class = "bold">The home page.</span> It's set up to look like a calendar, making it 
-                intuitive to use. Guides can instantly see all the tours for that month and know from the colored dots 
+            <p align = "justify"><span class = "bold">The home page.</span> The calendar interface makes it intuitive to use. Guides can instantly see all the tours for that month and know from the colored dots 
                 which ones need coverage. There is a legend at the top in case they forget what a color represents. 
-                Guides also have the option to only view their own tours and download the calendar so they have a copy of it. 
-                There is a menu on the top right-hand corner.</p>
+                Guides have the option to only view their own tours. They can also download the calendar so they have a copy of it.</p>
         </div>
-        <img class = "img" src = "Tour Info.png" alt = "tour info"><br>
-        <img class = "img" src = "Tour Confirmation.png" alt = "tour confirmation"><br>
+        <img class = "img" src = "Tour Info.png" alt = "tour info">
         <div class = "text">
-            <p align = "justify"><span class = "bold">Covering a tour.</span> Guides can click on each event and find information 
+            <p align = "justify"><span class = "bold">Covering a tour.</span> Guides can click on each tour and find information 
             about it. They can then choose to cover the tour.</p>
         </div>
-        <img class = "img" src = "Guide List.png" alt = "guides"><br>
+        <img class = "img" src = "Guide List.png" alt = "guides">
         <div class = "text">
             <p align = "justify"><span class = "bold">The guide list.</span> Everyone's contact info is clearly displayed. For extra convenience, 
-                their emails are linked. Guides can organize the list to their liking, sorting by alphabetical order or filtering by 
-                guide type or field of study. They can also view each other's profiles for more information. These features can be helpful for matching a guide with a 
-                tour group.</p>
+                their emails are linked. One of the Excel sheet's problems was the lack of organization for the guides' information, so I included a 
+                filter and sort. Guides can, for example, filter by field of study or sort by alphabetical order. For more information, they can view 
+                each other's profiles.</p>
         </div>
-        <img class = "img" src = "Profile 1.png" alt = "profile"><br>
-        <img class = "img" src = "Profile 2.png" alt = "profile"><br>
-        <img class = "img" src = "Profile 3.png" alt = "stats"><br>
+        <img class = "img" src = "Profile 1.png" alt = "profile">
         <div class = "text">
             <p align = "justify"><span class = "bold">Profile page.</span> Guides fill out all their information here. 
-                The information is organized into different categories, and guides can see clearly which category they're at. 
-                They can change their profile photo, and also view tour stats to check their activity.</p>
+                The information is organized into different categories. The social media profiles I researched had the info on separate lines to be more mobile-friendly. 
+                Guides very strongly prefered to use their laptops, so we decided not to focus on mobile and since there's a lot to fill out, 
+                we put info on the same lines. This way, guides don't need to do the extra work of scrolling.</p>
+        </div>
+        <img class = "img" src = "Profile 2.png" alt = "availability">
+        <div class = "text">
+            <p align = "justify">Guides indicate their availability here. To help prevent a guide from being assigned too many tours, I added a space where they could enter a minimum/maximum number of tours per month.</p>
+        </div>
+        <img class = "img" src = "Profile 3.png" alt = "stats">
+        <div class = "text">
+            <p align = "justify">My friend and I wanted to include a stats feature to serve as a reference for guides and the supervisors. 
+            Admissions felt this feature was unnecessary and it wasn't super easy to code anyway, so this idea was scrapped (for now).</p>
+        </div><br>
+        <div class = "highlight">
+            <p align = "justify">We named our app SAPTours (Student Ambassador Program Tours). 
+                My friend finished coding it and released it in December 2019. It is now currently being used. We received a lot of positive responses: guides 
+                have been finding it easy to use.</p>
         </div>
         <div class = "title">
             <h2>Reflection</h2>
