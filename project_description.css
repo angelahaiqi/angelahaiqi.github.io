@@ -65,6 +65,19 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+.slideshow {
+    height: auto;
+    background-size: contain;
+    background-image: url('Coach/connect_page.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slideshow:hover {
+    background-size: contain;
+    background-image: url('Coach/Old.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
 figure {
     display: flex;
     flex-flow: column;
@@ -112,6 +125,14 @@ figcaption {
         padding-bottom: 20px;
         width: 80%;
     }
+    .slideshow {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .slideshow:hover {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
     .thumb {
         width: 50%;
         margin: 10px 10px;
@@ -155,6 +176,14 @@ figcaption {
         padding-top: 30px;
         padding-bottom: 30px;
         width: 50%;
+    }
+    .slideshow {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+    .slideshow:hover {
+        padding-top: 110px;
+        padding-bottom: 110px;
     }
     .thumb {
         width: 50%;
@@ -200,6 +229,14 @@ figcaption {
         padding-bottom: 50px;
         width: 50%;
     }
+    .slideshow {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .slideshow:hover {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
     .thumb {
         width: 33%;
         margin: 10px 10px;
@@ -243,6 +280,14 @@ figcaption {
         padding-top: 50px;
         padding-bottom: 50px;
         width: 50%;
+    }
+    .slideshow {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    .slideshow:hover {
+        padding-top: 200px;
+        padding-bottom: 200px;
     }
     .thumb {
         width: 33%;
@@ -288,6 +333,14 @@ figcaption {
         padding-top: 50px;
         padding-bottom: 50px;
         width: 50%;
+    }
+    .slideshow {
+        padding-top: 275px;
+        padding-bottom: 275px;
+    }
+    .slideshow:hover {
+        padding-top: 275px;
+        padding-bottom: 275px;
     }
     .thumb {
         width: 33%;
