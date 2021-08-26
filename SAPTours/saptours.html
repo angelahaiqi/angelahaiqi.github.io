@@ -54,8 +54,8 @@
             <p align = "justify">My friend was a student tour guide for our alma mater, Brandeis University. The guides shared an 
                 Excel sheet that contained everyone's information and a list of upcoming tours. On the 
                 Excel sheet, guides could pick up available tours by typing their name next to them. Despite how straightforward this seemed, the Admissions Office was 
-                finding that tours were not being picked up fast enough. The lead tour guide or guide supervisor would often have to step in and 
-                assign tours, which was very time-consuming. My friend, based on personal experience and the complaints of other guides, believed the problem 
+                finding that tours were not being picked up fast enough. The lead tour guides would often have to step in and assign tours, which was very 
+                time-consuming. My friend, based on personal experience and the complaints of other guides, believed the problem 
                 lay in the Excel sheet. Brandeis had tours throughout each week, even multiple times in a day, and 40+ guides, with more being hired each semester. 
                 The sheet was a monstrous block of information that was difficult to navigate. As a result, my friend pitched the idea to develop a 
                 tour-scheduling app and asked me to be the designer.</p>
@@ -68,25 +68,32 @@
             <h2>User Research</h2>
         </div>
         <div class = "text">
-            <p align = "justify">The first step was understanding who our users were and what they needed. To do this, we consulted with the lead tour guide 
-                and guide supervisor. Since my friend was a regular student tour guide, I would also ask him questions on how their team functioned. I 
-                learned two key things:</p>
+            <p align = "justify">The first step was understanding who our users were and what they needed. To do this, we consulted with the lead tour guides. Since my friend 
+                was a regular student tour guide, I would also ask him questions on how their team functioned. I learned two key things:</p>
         </div>
         <div class = "highlight">
-            <p align = "justify">Guides were typically supposed to sign up for tours themselves, but may be assigned certain ones, 
-                either due to lack of coverage or because the supervisor felt they would be a good fit (eg. if a tour group was made up of prospective international 
-                students, a guide who was an international student themself should probably lead them). If a guide needed to drop a tour, they were responsible for finding a replacement.</p>
+            <p align = "justify">1. Guides were meant to be fairly autonomous. They were expected to sign up for most tours themselves. If a guide needed to drop a tour, 
+            they were also responsible for finding a replacement.</p>
+        </div>
+        <div class = "highlight">
+            <p align = "justify">2. The lead tour guide does everything a regular guide does, with the added responsibility of sometimes assigning tours. Tours may 
+                be assigned either due to lack of coverage, or because a specific guide would be a good fit for them (eg. if a tour group was made up of prospective international 
+                students, a guide who was an international student themself should probably lead them). 
+            </p>
         </div>
         <div class = "text">
-            <p align = "justify">Based on these facts, I created a persona to cement my understanding of our users.</p>
+            <p align = "justify">Based on these facts, I determined that there were two types of users: regular tour guides and lead tour guides. I created 
+            personas for them to cement my understanding:</p>
         </div>
-        <img class = "img" src = "Mitchell Sanders.png" alt = "user persona">
+        <img class = "img" src = "Mitchell Sanders.png" alt = "guide persona">
+        <img class = "img" src = "Isabelle Wu.png" alt = "lead guide persona">
         <div class = "text">
-            <p align = "justify">Essentially, our users, the student tour guides, needed these features:</p>
+            <p align = "justify">Essentially, the regular and lead guides needed these features:</p>
             <p align = "justify"><span class = "bold">1.</span> The ability to immediately see what tours were available and pick them up.<br><br>
                 <span class = "bold">2.</span> The ability to find other guides' info, so that they could contact them.<br><br>
-                <span class = "bold">3.</span> The ability to set/edit their availability, so that other guides or the supervisors can see if they could possibly cover a certain tour. 
-                Since guides are all busy students, there should also be a way to ensure no one is contacted too often.</p>
+                <span class = "bold">3.</span> The ability to set/edit their availability, so that other guides can see if they could possibly cover a certain tour. 
+                Since guides are all busy students, there should also be a way to ensure no one is contacted too often.<br><br>
+                <span class = "bold">4.</span> The lead guides specifically needed the ability to find everyone's backgrounds for tour matching.</p>
         </div>
         <div class = "title">
             <h2>App Research</h2>
@@ -115,8 +122,7 @@
         </div>
         <div class = "text">
             <p align = "justify">Now that the research was done, it was time to design! I created a few drafts, going back and forth with my friend to see 
-                what he was able or unable to develop. Eventually, I reached a design that I was happy with and also seemed feasible enough. We presented this design 
-                to the Admissions Office and after hearing their feedback, my friend began to code.</p>
+                what he was able or unable to develop. Eventually, I reached a design that I was happy with and also seemed feasible enough.</p>
             <p align = "justify">My design did not end up being fully implemented, due to further technical limitations and the Admissions Office prioritizing 
                 different things. However, the general idea is there. Below is my vision. <a href = "https://drive.google.com/drive/folders/1-3ub-X_0zev6GJs1OonX1RLFcJ6IeQvm?usp=sharing">Here are screenshots of the real app.</a></p>
             </div>
@@ -136,14 +142,18 @@
         <img class = "img" src = "Tour Info.png" alt = "tour info">
         <div class = "text">
             <p align = "justify"><span class = "bold">Covering a tour.</span> Guides can click on each tour and find information 
-            about it. They can then choose to cover the tour.</p>
+            about it. We included a section on how many guides were needed and how many were currently covering so that the lead guides knew how many more to 
+            add if need be. They can also see who is already covering the tour.</p>
         </div>
         <img class = "img" src = "Guide List.png" alt = "guides">
         <div class = "text">
-            <p align = "justify"><span class = "bold">The guide list.</span> Everyone's contact info is clearly displayed. For extra convenience, 
-                their emails are linked. One of the Excel sheet's problems was the lack of organization for the guides' information, so I included a 
-                filter and sort. Guides can, for example, filter by field of study or sort by alphabetical order. For more information, they can view 
-                each other's profiles.</p>
+            <p align = "justify"><span class = "bold">The guide list.</span> Since guides are responsible for finding a replacement if they need to drop a tour, 
+            I made a page where everyone's contact info is clearly displayed. Their emails are also linked for extra convenience. One problem with the Excel sheet was the 
+            lack of organization, so I included a filter and sort. Guides can sort the list to their liking, for example, by alphabetical order. The filter is more 
+            for the lead guides. To see which guides could be a match for a specific tour, the lead guides can filter the list by field of study or hometown. I considered displaying 
+            every piece of information in the list, but since there's so much, I was afraid it would end up overwhelming the guides. If the leads needed someone who was in STEM, it didn't matter where 
+            they came from. All they needed to know was which guides were in STEM and what their contact info was. If the leads wanted to see a more comprehensive background, 
+            they would click on "View Profile."</p>
         </div>
         <img class = "img" src = "Profile 1.png" alt = "profile">
         <div class = "text">
@@ -156,11 +166,6 @@
         <div class = "text">
             <p align = "justify">Guides indicate their availability here. To help prevent a guide from being assigned too many tours, I added a space where they could enter a minimum/maximum number 
             of tours per month. This feature works with the guide list filter: guides can filter out other guides who are maxed out for the month.</p>
-        </div>
-        <img class = "img" src = "Profile 3.png" alt = "stats">
-        <div class = "text">
-            <p align = "justify">My friend and I wanted to include a stats feature to serve as a reference for guides and the supervisors. 
-            Admissions felt this feature was unnecessary and it wasn't super easy to code anyway, so this idea was scrapped (for now).</p>
         </div><br>
         <div class = "highlight">
             <p align = "justify">We named our app SAPTours (Student Ambassador Program Tours). 
