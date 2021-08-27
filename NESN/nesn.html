@@ -9,7 +9,7 @@
         <link rel="manifest" href="../site.webmanifest">
         <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link href="https://fonts.googleapis.com/css?family=Noto Sans JP" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700,900' rel='stylesheet'>
         <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
         <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
@@ -20,6 +20,34 @@
             });
         </script>
         <title>Angela Liu</title>
+        <style>
+            .banner {
+                background-color: #dfdfdf;
+            }
+            .banner img {
+                width: 45%;
+            }
+            .header {
+                padding-top: 30px;
+            }
+            @media screen and (max-width: 599px) {
+                .header {
+                    padding-top: 0px;
+                }
+            }
+            @media screen and (min-width: 1600px) {
+                .header {
+                    padding-top: 80px;
+                }
+                .overview {
+                    padding-right: 1000px;
+                }
+                .banner img {
+                    padding-right: 300px;
+                    width: 35%;
+                }
+            }
+        </style>
     </head>
     <body>
         <a href="../index.html" class = "logo"></a>
@@ -44,21 +72,18 @@
                 });
             });
         </script>
-        <div class = "header">
-            <h1>New England Sports Network</span></h1>
-        </div>
-        <img class = "banner" src = "nesn_banner.png" alt = "banner">
-        <div class = "title">
-            <h2>Overview</h2>
-        </div>
-        <div class = "text">
-            <p align = "justify">I am currently working as a UX/UI Designer at the <a href = "https://nesn.com">New England Sports Network (NESN)</a>, one of the 
-            top regional sports networks in America. Unfortunately, I cannot disclose too many details about my work but I'm happy to share a summary!</p>
-        </div>  
-        <div class = "text">
-            <p align = "justify"><span class = "bold">Role:</span> UX/UI Designer</p>
-            <p align = "justify"><span class = "bold">Date:</span> October 1st 2020 - Present</p>
-            <p align = "justify"><span class = "bold">Tools:</span> Sketch, Photoshop, InVision</p>
+        <div class = "banner">
+            <img class = "banner img" src = "nesn_logo.png" alt = "NESN logo"> 
+            <div class = "header">
+                <h1>New England Sports Network</h1>
+            </div>
+            <div class = "overview">
+                <p align = "justify">Currently, I am working as a UX/UI Designer at <a href = "https://nesn.com">NESN</a>, one of the 
+                top regional sports networks in America.</p>
+                <p align = "justify"><span class = "bold">Role:</span> UX/UI Designer</p>
+                <p align = "justify"><span class = "bold">Date:</span> October 1st 2020 - Present</p>
+                <p align = "justify"><span class = "bold">Tools:</span> Sketch, Photoshop, InVision</p>
+            </div> 
         </div> 
         <div class = "title">
             <h2>Highlights</h2>
@@ -78,7 +103,7 @@
         </div>
         <div class = "prevnext">
             <a href= "../Art_Design/art_design.html" class= "prev">&#8592; Other Works</a>
-            <a href= "../SAPTours/saptours.html" class= "next">SAPTours &#8594;</a>
+            <a href= "../SAPTours/saptours.html" class= "next">SAP Tours &#8594;</a>
         </div>
         <div id="footer"></div>
     </body>

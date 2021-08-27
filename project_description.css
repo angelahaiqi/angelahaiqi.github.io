@@ -2,11 +2,21 @@ body {
     background-color: white;
 }
 .header {
-    font-family: "Noto Sans JP";
+    font-family: "Merriweather";
     text-align: left;
 }
+.overview {
+    font-family: "Roboto";
+    text-align: left;
+}
+.banner {
+    width: 100%;
+}
+.banner img {
+    height: auto;
+}
 .title {
-    font-family: "Noto Sans JP";
+    font-family: "Merriweather";
     text-align: left;
 }
 .text {
@@ -15,9 +25,9 @@ body {
     font-weight: 400;
 }
 .highlight {
-    font-family: "Roboto";
+    font-family: "Merriweather";
     text-align: left;
-    font-weight: 700;
+    font-weight: bold;
 }
 .bold {
     font-family: "Roboto";
@@ -35,10 +45,10 @@ a:hover {
     text-align: center;
 }
 .next {
-    font-family: "Noto Sans JP";
+    font-family: "Merriweather";
 }
 .prev {
-    font-family: "Noto Sans JP";    
+    font-family: "Merriweather";    
 }
 .banner {
     height: auto;
@@ -91,9 +101,23 @@ figcaption {
 @media screen and (max-width: 599px) {
     .header {
         text-align: center;
-        font-size: 15px;
+        font-size: 16px;
+    }
+    .overview {
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 14px;
+    }
+    .banner {
+        height: 400px;
+    }
+    .banner img {
+        width: 40%;
+        padding-bottom: 0px;
     }
     .title {
+        padding-top: 10px;
         padding-left: 25px;
         font-size: 14px;
     }
@@ -148,8 +172,21 @@ figcaption {
         text-align: center;
         font-size: 20px;
     }
+    .overview {
+        padding-left: 75px;
+        padding-right: 75px;
+        font-size: 18px;
+    }
+    .banner {
+        height: 550px;
+    }
+    .banner img {
+        width: 40%;
+        padding-bottom: 0px;
+    }
     .title {
         padding-left: 150px;
+        padding-top: 25px;
     }
     .text {
         padding-left: 150px;
@@ -160,7 +197,7 @@ figcaption {
     .highlight {
         padding-left: 150px;
         padding-right: 150px;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 25px;
     }
     .prevnext {
@@ -195,7 +232,23 @@ figcaption {
 @media screen and (min-width: 1000px) and (max-width: 1024px) {
     .header {
         padding-left: 50px;
+        padding-top: 20px;
         font-size: 28px;
+    }
+    .overview {
+        padding-left: 50px;
+        padding-right: 125px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .banner {
+        height: 500px;
+    }
+    .banner img {
+        float: right;
+        padding-top: 125px;
+        padding-right: 50px;
+        width: 45%;
     }
     .title {
         padding-left: 200px;
@@ -204,13 +257,13 @@ figcaption {
     .text {
         padding-left: 200px;
         padding-right: 200px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 25px;
     }
     .highlight {
         padding-left: 200px;
         padding-right: 200px;
-        font-size: 22px;
+        font-size: 20px;
         line-height: 25px;
     }
     .prevnext {
@@ -245,8 +298,24 @@ figcaption {
 } 
 @media screen and (min-width: 1025px) and (max-width: 1600px) {
     .header {
-        padding-left: 75px;
+        padding-left: 125px;
+        padding-top: 40px;
         font-size: 28px;
+    }
+    .overview {
+        padding-left: 125px;
+        padding-right: 800px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .banner {
+        height: 500px;
+    }
+    .banner img {
+        float: right;
+        padding-top: 70px;
+        padding-right: 125px;
+        width: 45%;
     }
     .title {
         padding-top: 10px;
@@ -298,8 +367,24 @@ figcaption {
 
 @media screen and (min-width: 1600px) {
     .header {
-        padding-left: 75px;
-        font-size: 32px;
+        padding-left: 300px;
+        padding-top: 80px;
+        font-size: 30px;
+    }
+    .overview {
+        padding-left: 300px;
+        padding-right: 1100px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .banner {
+        height: 600px;
+    }
+    .banner img {
+        float: right;
+        padding-top: 125px;
+        padding-right: 300px;
+        width: 35%;
     }
     .title {
         padding-top: 10px;
