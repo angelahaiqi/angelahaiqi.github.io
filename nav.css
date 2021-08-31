@@ -4,13 +4,13 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: black;
-    font-family: "Merriweather";
+    color: #1c1c1c;
+    font-family: "Roboto Mono";
     font-weight: 400;
     padding: 14px 16px;
 }
 nav a:hover {
-    color: #8790ff;
+    color: #a9c5f9;
     transition: 1s;
 }
 ul {
@@ -116,10 +116,35 @@ ul {
         padding: 15px 10px;
     }
 } 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
     .logo {
         background-size: 75%;
         padding: 35px;
+    }
+    ul {
+        padding-top: 5px;
+    }
+    .item {
+        display: block;
+        width: auto;
+    }
+    .burger {
+        display: none;
+    }
+    .item {
+        order: 1;
+    }
+    .menu li {
+        padding: 5px 10px;
+    }
+}  
+@media screen and (min-width: 1601px) {
+    .logo {
+        background-size: 75%;
+        padding: 50px;
+    }
+    nav {
+        font-size: 25px;
     }
     ul {
         padding-top: 5px;

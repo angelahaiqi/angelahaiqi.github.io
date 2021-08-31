@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 .header {
-    font-family: "Merriweather";
+    font-family: "Roboto Mono";
     text-align: left;
 }
 .overview {
@@ -16,39 +16,42 @@ body {
     height: auto;
 }
 .title {
-    font-family: "Merriweather";
+    font-family: "Roboto Mono";
     text-align: left;
+    color: #1c1c1c;
 }
 .text {
     font-family: "Roboto";
     text-align: left;
     font-weight: 400;
+    color: #1c1c1c;
 }
 .highlight {
-    font-family: "Merriweather";
+    font-family: "Roboto Mono";
     text-align: left;
     font-weight: bold;
+    color: #1c1c1c;
 }
 .bold {
     font-family: "Roboto";
     font-weight: 700;
 }
 a {
-    color: #8790ff;
+    color: #a9c5f9;
     text-decoration: underline;
 }
 a:hover {
-    color: #8790ff;
+    color: #a9c5f9;
     text-decoration: none;
 }
 .prevnext {
     text-align: center;
 }
 .next {
-    font-family: "Merriweather";
+    font-family: "Roboto Mono";
 }
 .prev {
-    font-family: "Merriweather";    
+    font-family: "Roboto Mono";    
 }
 .banner {
     height: auto;
@@ -365,7 +368,7 @@ figcaption {
     }
 } 
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1601px) {
     .header {
         padding-left: 300px;
         padding-top: 80px;

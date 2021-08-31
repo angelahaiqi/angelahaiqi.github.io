@@ -3,7 +3,7 @@
     text-decoration: none;
 } 
 .fa-envelope:hover {
-    color: #8790ff;
+    color: #a9c5f9;
     transition: 1s;
 }
 .fa-linkedin-in {
@@ -11,7 +11,7 @@
     text-decoration: none;
 } 
 .fa-linkedin-in:hover {
-    color: #8790ff;
+    color: #a9c5f9;
     transition: 1s;
 }
 @media screen and (max-width: 599px) {
