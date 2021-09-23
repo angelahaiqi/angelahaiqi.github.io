@@ -112,13 +112,7 @@
             <h2>App Research</h2>
         </div>
         <div class = "text">
-            <p align = "justify">Once we had a good idea on the user base, we needed to figure out what type of platform to build. We had three 
-            options: a web app, a mobile app, or an automation process. We analyzed the pros and cons of each.</p>
-        </div>
-        <img class = "img" src = "Platform Analysis.png" alt = "platform analysis">
-        <div class = "text">
-            <p align = "justify">We ruled out the automation process fairly quickly, due to its lack of utility. That left us deciding between a web 
-                and mobile app. We asked the guides what device they used when scheduling tours and found <span class = "bold">all of them pretty exclusively used their laptops.</span> 
+            <p align = "justify">Once we had a good idea on the user base, we needed to figure out what type of platform to build. We asked the guides what device they used when scheduling tours and found <span class = "bold">all of them pretty exclusively used their laptops.</span> 
                 Web app was definitely the way to go, which was lucky for my friend since it would be slightly easier for him to code than mobile.</p>
             <p align = "justify">In terms of the app's interface, we felt a <span class = "bold">calendar-based app</span> made the most sense, since 
                 it would clearly show all the tour times for each month. I researched calendar apps, such as Google Calendar, to see what the best practices were.</p>
@@ -126,8 +120,7 @@
         <img class = "img" src = "Google Calendar.png" alt = "google calendar">
         <div class = "text">
             <p align = "justify">As I mentioned before, sometimes a guide will be assigned to a specific tour. In order to determine if a guide would be a good fit for a tour, 
-            their personal information, such as field of study or hometown, would have to be stored somewhere. I looked into social media apps, such as Facebook 
-            and Instagram, for inspiration on how a profile should be designed.</p>
+            their personal information, such as field of study or hometown, would have to be stored somewhere. I looked into social media apps, such as Facebook, for inspiration on how a profile should be designed.</p>
         </div>
         <img class = "img" src = "Social Media.png" alt = "social media apps">
         <div class = "title">
@@ -147,10 +140,12 @@
                 be hidden either.</p>
         </div>
         <img class = "img" src = "Home Page.png" alt = "home"> 
+        <img class = "img" src = "Menu.png" alt = "menu"> 
         <div class = "text">
             <p align = "justify"><span class = "bold">The home page.</span> The calendar interface makes it intuitive to use. Guides can instantly see all the tours for that month and know from the colored dots 
                 which ones need coverage. There is a legend at the top in case they forget what a color represents. 
-                Guides have the option to only view their own tours. They can also download the calendar so they have a copy of it.</p>
+                Guides have the option to only view their own tours. They can also download the calendar so they have a copy of it. At the upper right corner is a 
+                dropdown menu where guides can access other pages.</p>
         </div>
         <img class = "img" src = "Tour Info.png" alt = "tour info">
         <div class = "text">
@@ -158,27 +153,27 @@
             about it. We included a section on how many guides were needed and how many were currently covering so that the lead guides knew how many more to 
             add if need be. They can also see who is already covering the tour.</p>
         </div>
-        <img class = "img" src = "Guide List.png" alt = "guides">
-        <div class = "text">
-            <p align = "justify"><span class = "bold">The guide list.</span> Since guides are responsible for finding a replacement if they need to drop a tour, 
-            I made a page where everyone's contact info is clearly displayed. Their emails are also linked for extra convenience. One problem with the Excel sheet was the 
-            lack of organization, so I included a filter and sort. Guides can sort the list to their liking, for example, by alphabetical order. The filter is more 
-            for the lead guides. To see which guides could be a match for a specific tour, the lead guides can filter the list by field of study or hometown. I considered displaying 
-            every piece of information in the list, but since there's so much, I was afraid it would end up overwhelming the guides. If the leads needed someone who was in STEM, it didn't matter where 
-            they came from. All they needed to know was which guides were in STEM and what their contact info was. If the leads wanted to see a more comprehensive background, 
-            they would click on "View Profile."</p>
-        </div>
         <img class = "img" src = "Profile 1.png" alt = "profile">
         <div class = "text">
-            <p align = "justify"><span class = "bold">Profile page.</span> Guides fill out all their information here. 
-                The information is organized into different categories. The social media profiles I researched had the info on separate lines to be more mobile-friendly. 
-                Guides very strongly prefered to use their laptops, so we decided not to focus on mobile and since there's a lot to fill out, 
-                we put info on the same lines. This way, guides don't need to do the extra work of scrolling.</p>
+            <p align = "justify"><span class = "bold">Profile page.</span> Guides fill out all their information here.  
+                Following what I saw in social media profiles, the information is organized into different categories. When viewing another guide's profile, the setup is the same as here except there's no 
+                save button.</p>
         </div>
         <img class = "img" src = "Profile 2.png" alt = "availability">
         <div class = "text">
             <p align = "justify">Guides indicate their availability here. To help prevent a guide from being assigned too many tours, I added a space where they could enter a minimum/maximum number 
-            of tours per month. This feature works with the guide list filter: guides can filter out other guides who are maxed out for the month.</p>
+            of tours per month. This feature works with the guide list which I'll discuss next.</p>
+        </div>
+        <img class = "img" src = "Guide List.png" alt = "guides">
+        <img class = "img" src = "Filters.png" alt = "filters">
+        <div class = "text">
+            <p align = "justify"><span class = "bold">The guide list.</span> Since guides are responsible for finding a replacement if they need to drop a tour, 
+            I made a page where everyone's contact info is clearly displayed. Their emails are also linked for extra convenience. One problem with the Excel sheet was the 
+            lack of organization, so I included a filter and sort. Guides can sort the list to their liking, for example, by alphabetical order. The filter is more 
+            for the lead guides. To see which guides could be a match for a specific tour, the lead guides can filter the list by field of study or US citizenship. I considered displaying 
+            every piece of information in the list, but since there's so much, I was afraid it would end up overwhelming the guides. As a result, I have the list, by default, only 
+            show the guides' contact info. Through the filters, leads can display relevant information. If the leads wanted to see a more comprehensive background, 
+            they would click on the guide's name to view their profile. There is also a toggle to hide guides who have hit their maximum number of tours for the month.</p>
         </div><br>
         <div class = "highlight">
             <p align = "justify">We named our app SAPTours (Student Ambassador Program Tours). 
