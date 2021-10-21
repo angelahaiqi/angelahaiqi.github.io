@@ -21,50 +21,36 @@
         </script>
         <title>Angela Liu</title>
         <style>
-            @media screen and (max-width: 599px) {
-                .header {
-                    text-align: center;
-                    font-size: 15px;
-                }
-                .text {
-                    text-align: center;
-                    padding-left: 50px;
-                    padding-right: 50px;
-                    font-size: 15px;
-                }
-            }   
-            @media screen and (min-width: 600px) and (max-width: 999px) {
-                .header {
-                    text-align: center;
-                    font-size: 20px;
-                }
-                .text {
-                    text-align: center;
-                    font-size: 20px;
-                }
-            } 
+            .banner {
+                background-color: #EB4125;
+            }
+            .banner img {
+                width: 38%;
+            }
+            .header {
+                color: white;
+            }
+            .overview {
+                color: white;
+            }
             @media screen and (min-width: 1000px) and (max-width: 1024px) {
                 .header {
-                    padding-left: 50px;
-                    font-size: 20px;
+                    padding-top: 50px;
                 }
-                .text {
-                    padding-left: 50px;
-                    padding-bottom: 20px;
-                    font-size: 20px;
-                }
-            } 
-            @media screen and (min-width: 1025px) {
+            }
+            @media screen and (min-width: 1600px) {
                 .header {
-                    padding-left: 75px;
-                    font-size: 25px;
+                    padding-left: 325px;
                 }
-                .text {
-                    padding-left: 80px;
-                    padding-bottom: 20px;
-                    font-size: 20px;
+                .overview {
+                    padding-left: 325px;
                 }
-            } 
+                .banner img {
+                    float: right;
+                    padding-right: 325px;
+                    width: 30%;
+                }
+            }
         </style>
     </head>
     <body>
@@ -90,22 +76,25 @@
                 });
             });
         </script>
-        <div class = "header">
-            <h1>Daily UI</span></h1>
-        </div>
-        <div class = "text">
-            <p>Sometimes I like doing Daily UI challenges! Here are some works (made with Figma).</p>
-        </div>
-        <div class = "container">
-            <img class = "thumb" src = "signup.png" alt = "signup girls">
-            <img class = "thumb" src = "credit.png" alt = "credit">
-            <img class = "thumb" src = "landing.png" alt = "landing">
-            <img class = "thumb" src = "calculator.png" alt = "calculator">
+           <div class = "banner">
+            <img class = "banner img" src = "depop_mockup.png" alt = "Depop"> 
+            <div class = "header">
+                <h1>Depop Redesign</h1>
+            </div>
+            <div class = "overview">
+                <p align = "justify">For a final round interview, I was asked to redesign the checkout experience for a mobile eCommerce app 
+                of my choosing.</p>
+                <p align = "justify"><span class = "bold">Time:</span> Around 4 hours</p>
+                <p align = "justify"><span class = "bold">Tools:</span> Figma</p>
+            </div> 
+        </div> 
+        <div class = "title">
+            <h2>Coming soon!</h2>
         </div>
         <div class = "prevnext">
-            <a href= "../Depop/depop.html" class= "prev">&#8592; Depop Redesign</a>
-            <a href= "../Art_Design/art_design.html" class= "next">Other Works &#8594;</a>
+            <a href= "../Coach/coach.html" class= "prev">&#8592; Coach Mobile App</a>
+            <a href= "../Daily UI/dailyui.html" class= "next">Daily UI &#8594;</a>
         </div>
-        <div id="footer"></div>
+        <div id ="footer"></div>
     </body>
 </html>
