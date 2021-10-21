@@ -2,11 +2,11 @@ body {
     background-color: white;
 }
 .header {
-    font-family: "Roboto Mono";
+    font-family: 'Antic Didone', serif;
     text-align: left;
 }
 .overview {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     text-align: left;
 }
 .banner {
@@ -16,7 +16,7 @@ body {
     height: auto;
 }
 .title {
-    font-family: "Roboto Mono";
+    font-family: 'Antic Didone', serif;
     text-align: left;
     color: #1c1c1c;
 }
@@ -27,31 +27,31 @@ body {
     color: #1c1c1c;
 }
 .highlight {
-    font-family: "Roboto Mono";
+    font-family: 'Antic Didone', serif;
     text-align: left;
     font-weight: bold;
-    color: #1c1c1c;
+    color: black;
 }
 .bold {
-    font-family: "Roboto";
+    font-family: "Open Sans";
     font-weight: 700;
 }
 a {
-    color: #a9c5f9;
+    color: #00C2CB;
     text-decoration: underline;
 }
 a:hover {
-    color: #a9c5f9;
+    color: #00C2CB;
     text-decoration: none;
 }
 .prevnext {
     text-align: center;
 }
 .next {
-    font-family: "Roboto Mono";
+    font-family: 'Antic Didone', serif;
 }
 .prev {
-    font-family: "Roboto Mono";    
+    font-family: 'Antic Didone', serif;    
 }
 .banner {
     height: auto;
