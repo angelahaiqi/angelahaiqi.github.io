@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+        <link rel="manifest" href="../site.webmanifest">
+        <script src="https://kit.fontawesome.com/3fdadcecb8.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open Sans: 400,600,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="../nav.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../project_description.css" hreflang="en">
+        <link rel="stylesheet" type="text/css" href="../contact.css" hreflang="en">
+        <script> 
+            $(function(){
+                $("#footer").load("../contact.html"); 
+            });
+        </script>
+        <title>Angela Liu</title>
+        <style>
+            .banner {
+                background-color: #CBE8DD;
+            }
+            .banner img {
+                width: 45%;
+            }
+            .header {
+                padding-top: 30px;
+            }
+            @media screen and (max-width: 599px) {
+                .header {
+                    padding-top: 0px;
+                }
+            }
+            @media screen and (min-width: 1600px) {
+                .header {
+                    padding-top: 80px;
+                }
+                .overview {
+                    padding-right: 1000px;
+                }
+                .banner img {
+                    padding-right: 300px;
+                    width: 35%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a href="../index.html" class = "logo"></a>
+        <nav>
+            <ul class = "menu">
+                <li class = "item"><a href="../index.html">works</a></li>
+                <li class = "item"><a href="../about.html">about</a></li>
+                <li class = "item"><a href="https://drive.google.com/file/d/1jzQJkGDz8Sw6Jm_z21itMIUfnMbPlMV-/view?usp=sharing" target="_blank">resume</a></li>
+                <li class = "burger"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+        <script>
+            $(function() {
+                $(".burger").on("click", function() {
+                    if ($(".item").hasClass("active")) {
+                        $(".item").removeClass("active");
+                        $(this).find("a").html("<i class='fas fa-bars'></i>");
+                    } else {
+                        $(".item").addClass("active");
+                        $(this).find("a").html("<i class='fas fa-times'></i>");
+                    }
+                });
+            });
+        </script>
+        <div class = "banner">
+            <img class = "banner img" src = "logos.png" alt = "Ann Taylor/LOFT logo"> 
+            <div class = "header">
+                <h1>Ann Taylor/LOFT</h1>
+            </div>
+            <div class = "overview">
+                <p align = "justify">Currently, I work as a UX/UI Designer at <a href = "https://anntaylor.com">Ann Taylor</a> and <a href = "https://loft.com">LOFT</a>, two of the 
+                most popular women's clothing brands.</p>
+                <p align = "justify"><span class = "bold">Role:</span> UX/UI Designer</p>
+                <p align = "justify"><span class = "bold">Date:</span> November 9th 2021 - Present</p>
+                <p align = "justify"><span class = "bold">Tools:</span> Figma, Photoshop, UserTesting</p>
+            </div> 
+        </div> 
+        <div class = "title">
+            <h2>Highlights</h2>
+        </div>
+        <div class = "text">
+            <p align = "justify">Since November 2021, I've been a UX/UI Designer for Ann Taylor and LOFT's eCommerce teams. I collaborate 
+                with designers, product managers, web developers, and other stakeholders to develop new ideas for their websites. My responsibilities include:</p>
+            <p align = "justify"><span class = "bold">1.</span> I've led major projects from conception to launch. Working cross-functionally with other teams, I've improved on the usability and 
+                visuals of key pages and features of both websites, significantly increasing engagement and conversion.<br><br>
+                <span class = "bold">2.</span> I conduct research to gather and evaluate user needs, informing our design decisions.<br><br>
+                <span class = "bold">3.</span> In between major projects, I work on smaller-scale requests made by stakeholders. I've also been building 
+                our design system, so that the design and development teams can work more efficiently.
+            </p>
+        </div>
+        <br>
+        <div class = "highlight">
+            <p align = "justify">Unfortunately, I cannot disclose more details on here. If you would like an in-depth rundown of my work, feel free reach out to me.</p>
+        </div> 
+        <br>
+        <div class = "prevnext">
+            <a href= "../Art_Design/art_design.html" class= "prev">&#8592; Other Works</a>
+            <a href= "../NESN/nesn.html" class= "next">NESN &#8594;</a>
+        </div>
+        <div id="footer"></div>
+    </body>
+</html>
